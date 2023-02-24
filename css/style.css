@@ -1,0 +1,101 @@
+/* ------------ Обнуление стилей ---------------- */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #121212
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-size: 18px;
+    color: #121212;
+    font-family: Manrope;
+    font-weight: 400;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* ------------ Pre-fix ---------------- */
+._container {
+    max-width: 1150px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 15px 0;
+}
+._active-link {
+    color: gray;
+    text-decoration: underline;
+}
+/* ------------ Header ---------------- */
+.header {
+    width: 100%;
+    margin-top: 26px;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 43px;
+
+}
+.header__logo {
+
+}
+.logo {
+
+}
+.header__menu {
+
+}
+.menu-list {
+    display: flex;
+    gap: 60px;
+}
+.menu-list__item {
+
+}
+.item-link {
+    
+}
+/* ------------ Page ---------------- */
+.page {
+    flex: 1 1 auto;
+}
+.main-block {
+}
+.main-block__title {
+    font-size: 60px;
+    line-height: 60px;
+}
+.main-block__box {
+    position: relative;
+}
+.main-block__box p {
+    z-index: 5;
+    color: white;
+}
+.main-block__box img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
