@@ -39,7 +39,7 @@ html, body {
     max-width: 1150px;
     margin: 0 auto;
     box-sizing: content-box;
-    padding: 15px 0;
+    padding: 0 15px;
 }
 ._active-link {
     color: gray;
