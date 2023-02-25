@@ -71,9 +71,6 @@ html, body {
     display: flex;
     gap: 60px;
 }
-.menu-list__item {
-    text-decoration: underline;
-}
 .item-link:hover, .menu-list__item:hover {
     color: #982e2eb5
 }
