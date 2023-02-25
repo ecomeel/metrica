@@ -41,13 +41,18 @@ html, body {
     box-sizing: content-box;
     padding: 0 15px;
 }
-._active-link {
-    color: gray;
-    text-decoration: underline;
-}
 ._title {
     margin-bottom: 30px;
 }
+/* ------------ Page ---------------- */
+.page {
+    padding-top: 70px;
+    flex: 1 1 auto;
+}
+.page > *:not(:last-child) {
+    padding-bottom: 150px;
+}
+
 /* ------------ Header ---------------- */
 .header {
     width: 100%;
@@ -58,41 +63,18 @@ html, body {
     justify-content: space-between;
     align-items: center;
     min-height: 43px;
-
-}
-.header__logo {
-
-}
-.logo {
-
 }
 .header__menu {
-
+    padding-right: 40px;
 }
 .menu-list {
     display: flex;
     gap: 60px;
 }
 .menu-list__item {
-
-}
-.item-link {
-    
-}
-/* ------------ Page ---------------- */
-.page {
-    flex: 1 1 auto;
-}
-
-.page > *:not(:last-child) {
-    margin-bottom: 150px;
-}
-.page__about-us {
-
+    text-decoration: underline;
 }
 /* ------------ MAIN BLOCK ---------------- */
-.main-block {
-}
 .main-block__title {
     font-size: 60px;
     line-height: 60px;
@@ -101,20 +83,16 @@ html, body {
 .main-block__box {
     position: relative;
 }
-.box__text {
+.box-text {
     position: absolute;
     bottom: 40px;
     left: 40px;
     color: white;
     line-height: 27.32px;
-    font-size: 20px;
+    font-size: 22px;
     width: 430px;
     height: 81px;
 }
-.box__img {
-    
-}
-
 /* ------------ ABOUT US ---------------- */
 .about-us__container {
     width: 91.4%;
@@ -130,6 +108,7 @@ html, body {
     line-height: 61.47px;
 }
 .about-us__button {
+    padding-top: 30px;
 }
 .about-us__button_link {
     background-color: #AD1818;
@@ -138,30 +117,13 @@ html, body {
 }
 
 /* ------------ PROJECTS ---------------- */
-.page__projects {
-}
-.projects {
-}
-.projects__container {
-}
-._container {
-}
-.projects__title {
-}
-.subtitle {
-}
 .projects__examples {
     display: flex;
     flex-direction: column;
     row-gap: 90px;
 }
-.project {
-    
-}
 .project > *:not(:last-child){
     margin-bottom: 15px;
-}
-.project__img {
 }
 .project__descript {
     font-size: 30px;
@@ -177,27 +139,20 @@ html, body {
     text-shadow: 0px 1px 1px #8d8c8c;
     
 }
-.projects__view-all{
-    position: relative;
-    border: 1px solid #AD1818;
+.projects__view-all {
     width: 100%;
-    height: 153px;
+    text-align: center;
+    padding: 60px 0;
+    border: 1px solid #AD1818;
 }
 .projects__view-all_link {
     font-size: 30px;
     color: #AD1818;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
 }
 /* ------------ PROJECTS ---------------- */
 .page__services {
     background-color: black;
     padding: 150px 0;
-}
-.services__container {
 }
 .services__title {
     color: white;
@@ -206,15 +161,10 @@ html, body {
     display: flex;
     flex-direction: column;
     row-gap: 60px;
-}
-.services__list-item {
-}
-.item {
-}
-.item__img {
-    margin-bottom: 15px;
+    padding-top: 30px;
 }
 .item__title {
+    padding-top: 15px;
     font-size: 30px;
     line-height: 40.98px;
     color: white;
@@ -223,7 +173,6 @@ html, body {
 .page__project {
 }
 .page__project img {
-    margin-top: -150px;
     width: 100%;
     object-fit: cover;
 }
@@ -233,25 +182,30 @@ html, body {
 }
 .page__project__container h3 {
     position: absolute;
-    bottom: 100px;
+    bottom: 70px;
     left: 0;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 40.98px;
     color: white;
     z-index: 5;
-    max-width: 443px;
+    max-width: 550px;
 }
 /* ------------ CONTACTS ---------------- */
+.contacts {
+    padding-bottom: 150px;
+}
 .contacts__tel, .contacts__mail {
     font-size: 60px;
     line-height: 60px;
 }
 /* ------------ FOOTER ---------------- */
 .footer {
-    height: 227px;
+    /* margin-top: 150px; */
+    max-height: 227px;
     background-color: black;
 }
 .footer__nav {
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     column-gap: 55px;
@@ -259,4 +213,37 @@ html, body {
 .footer__nav__link {
     color: white;
     line-height: 24.59px;
+}
+.footer p {
+    padding: 100px 0 10px 0;
+    color: white;
+    text-align: center;
+}
+
+
+/* ------------ @MEDIA ---------------- */
+@media (max-width: 1200px) {
+    .header__container {
+        padding: 0 20px;
+    }
+
+    .menu-list {
+        gap: 30px;
+        font-size: 1.2em;
+    }
+    .main-block__title {
+        font-size: 40px;
+        text-align: center;
+        line-height: 1;
+        max-width: 85%;
+    }
+    .page {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 972px){
+    .footer__nav__link {
+        font-size: 1.3em;
+    }
 }
