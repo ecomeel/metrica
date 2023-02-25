@@ -1,4 +1,5 @@
 /* ------------ Обнуление стилей ---------------- */
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular);
 *, *::before, *::after {
     padding: 0;
     margin: 0;
@@ -26,7 +27,6 @@ html, body {
     font-size: 18px;
     color: #121212;
     font-family: 'Manrope';
-    font-weight: 400;
 }
 .wrapper {
     min-height: 100%;
@@ -74,6 +74,9 @@ html, body {
 .menu-list__item {
     text-decoration: underline;
 }
+.item-link:hover, .menu-list__item:hover {
+    color: #982e2eb5
+}
 /* ------------ MAIN BLOCK ---------------- */
 .main-block__title {
     font-size: 60px;
@@ -89,9 +92,11 @@ html, body {
     left: 40px;
     color: white;
     line-height: 27.32px;
-    font-size: 22px;
+    font-size: 20px;
     width: 430px;
     height: 81px;
+    background-color: rgba(0, 0, 0, .1);
+
 }
 /* ------------ ABOUT US ---------------- */
 .about-us__container {
@@ -114,6 +119,10 @@ html, body {
     background-color: #AD1818;
     color: white;
     padding: 20px 40px;
+    transition: background-color .5s;
+}
+.about-us__button_link:hover{
+    background-color: #ac733fb5;
 }
 
 /* ------------ PROJECTS ---------------- */
@@ -144,10 +153,20 @@ html, body {
     text-align: center;
     padding: 60px 0;
     border: 1px solid #AD1818;
+    transition: all 1s;
+}
+.projects__view-all:hover {
+    box-shadow: 7px 7px 10px gray;
+    border-radius: 20px;
+    background-color: #bababa54;
+    
 }
 .projects__view-all_link {
     font-size: 30px;
     color: #AD1818;
+}
+.projects__view-all_link:hover {
+    border-bottom: 1px solid #AD1818;
 }
 /* ------------ PROJECTS ---------------- */
 .page__services {
@@ -170,8 +189,6 @@ html, body {
     color: white;
 }
 /* ------------ PROJECT ---------------- */
-.page__project {
-}
 .page__project img {
     width: 100%;
     object-fit: cover;
@@ -200,8 +217,6 @@ html, body {
 }
 /* ------------ FOOTER ---------------- */
 .footer {
-    /* margin-top: 150px; */
-    max-height: 227px;
     background-color: black;
 }
 .footer__nav {
@@ -213,10 +228,14 @@ html, body {
 .footer__nav__link {
     color: white;
     line-height: 24.59px;
+    transition: color .5s;
+}
+.footer__nav__link:hover {
+    color: rgba(255, 255, 255, .5)
 }
 .footer p {
     padding: 100px 0 10px 0;
-    color: white;
+    color: rgba(255, 255, 255, 0.3);
     text-align: center;
 }
 
@@ -240,10 +259,13 @@ html, body {
     .page {
         padding-top: 25px;
     }
-}
-
-@media (max-width: 972px){
+    img {
+        width: 100%;
+    }
+    .page__project__title {
+        padding-left: 20px;
+    }
     .footer__nav__link {
-        font-size: 1.3em;
+        font-size: 25px;
     }
 }
