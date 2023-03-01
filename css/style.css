@@ -81,8 +81,12 @@ html {
     display: flex;
     gap: 60px;
 }
+.item-link {
+    transition: all .3s;
+}
 .item-link:hover, .menu-list__item:hover {
-    color: #982e2eb5
+    color: #982e2eb5;
+    text-decoration: 2px underline;
 }
 /* ------------ MAIN BLOCK ---------------- */
 .main-block__title {
