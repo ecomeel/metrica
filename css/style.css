@@ -28,6 +28,9 @@ html, body {
     color: #121212;
     font-family: 'Manrope';
 }
+html {
+    scroll-behavior: smooth;
+}
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -238,6 +241,7 @@ html, body {
 
 
 /* ------------ @MEDIA ---------------- */
+
 @media (max-width: 1200px) {
     .header__container {
         padding: 0 20px;
