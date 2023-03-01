@@ -119,10 +119,12 @@ html {
     background-color: #AD1818;
     color: white;
     padding: 20px 40px;
-    transition: background-color .5s;
+    border-radius: 5px;
+    transition: all .5s;
 }
 .about-us__button_link:hover{
     background-color: #ac733fb5;
+    box-shadow: 2px 2px 5px gray;
 }
 
 /* ------------ PROJECTS ---------------- */
@@ -146,28 +148,23 @@ html {
 }
 .project__details:hover{
     text-shadow: 0px 1px 1px #8d8c8c;
-    
-}
-.projects__view-all {
-    width: 100%;
-    text-align: center;
-    padding: 60px 0;
-    border: 1px solid #AD1818;
-    transition: all 1s;
-}
-.projects__view-all:hover {
-    box-shadow: 7px 7px 10px gray;
-    border-radius: 20px;
-    background-color: #bababa54;
-    
 }
 .projects__view-all_link {
+    display: block;
+    text-align: center;
+    padding: 56px 0;
     font-size: 30px;
     color: #AD1818;
+    border: 1px solid #AD1818;
+    border-radius: 5px;
+    transition: all 1s;
 }
 .projects__view-all_link:hover {
-    border-bottom: 1px solid #AD1818;
+    box-shadow: 7px 7px 10px gray;
+    background-color: #ad1818;
+    color: white;
 }
+
 /* ------------ PROJECTS ---------------- */
 .page__services {
     background-color: black;
@@ -212,8 +209,12 @@ html {
     padding-bottom: 150px;
 }
 .contacts__tel, .contacts__mail {
+    display: block;
     font-size: 60px;
     line-height: 60px;
+}
+.contacts__mail:hover, .contacts__tel:hover {
+    text-decoration: underline;
 }
 /* ------------ FOOTER ---------------- */
 .footer {
