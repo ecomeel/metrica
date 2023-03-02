@@ -79,6 +79,7 @@ html {
 }
 .menu-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 60px;
 }
 .item-link {
@@ -237,7 +238,7 @@ a.projects__view-all_link {
     justify-content: center;
     column-gap: 55px;
 }
-.footer__nav__link {
+a.footer__nav__link {
     color: white;
     line-height: 24.59px;
     transition: color .5s;
@@ -283,4 +284,15 @@ a.projects__view-all_link {
     }
 }
 
+@media (max-width: 767px) {
+    .main-block__title {
+        font-size: 30px;
+    }
+    p.about-us__text {
+        font-size: 30px;
+    }
+    .footer__nav__link {
+        font-size: 24px;
+    }
+}
 
