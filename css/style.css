@@ -172,7 +172,6 @@ a.projects__view-all_link {
     transition: all 1s;
 }
 .projects__view-all_link:hover {
-    box-shadow: 7px 7px 10px gray;
     background-color: #ad1818;
     color: white;
 }
@@ -226,7 +225,7 @@ a.projects__view-all_link {
     line-height: 60px;
 }
 .contacts__mail:hover, .contacts__tel:hover {
-    text-decoration: underline;
+    text-decoration: 2px underline;
 }
 /* ------------ FOOTER ---------------- */
 .footer {
