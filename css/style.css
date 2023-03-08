@@ -213,7 +213,7 @@ a.projects__view-all_link {
 /* ------------ PROJECT ---------------- */
 
 .page__project {
-    background-image: url('img/project.jpg');
+    background-image: url('./img/project.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
