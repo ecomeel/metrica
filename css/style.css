@@ -29,13 +29,15 @@ input, button, textarea {
 html, body {
     height: 100%;
     line-height: 1;
-    letter-spacing: -0.03em;
     font-size: 18px;
     color: #121212;
     font-family: 'Manrope';
 }
 html {
     scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6, p, a, div {
+    letter-spacing: -0.03em;
 }
 /* ------------ WRAPPER ---------------- */
 .wrapper {
@@ -87,17 +89,15 @@ html {
 }
 .item-link {
     transition: all .2s;
-    /* letter-spacing: -0.03em; */
 }
 .item-link:hover {
-    color: gray;
-    border-bottom: 1px solid gray
+    opacity: .5;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
 }
 /* ------------ MAIN BLOCK ---------------- */
 .main-block__title {
     font-size: 60px;
     width: 956px;
-    letter-spacing: -0.03em;
     line-height: 60px;
     text-align: left;
 }
@@ -105,7 +105,6 @@ html {
     position: relative;
 }
 .box-text {
-    letter-spacing: -0.03em;
     position: absolute;
     bottom: 40px;
     left: 40px;
@@ -128,8 +127,8 @@ html {
     font-size: 45px;
     width: 1048px;
     line-height: 61.47px;
-    letter-spacing: -0.03em;
     margin-bottom: 21px;
+    margin-left: 2px;
 }
 .about-us__button {
     padding-top: 30px;
@@ -165,7 +164,6 @@ a.about-us__button_link {
 .project__descript {
     font-size: 30px;
     line-height: 40.98px;
-    letter-spacing: -0.03em;
 }
 a.project__details {
     vertical-align: top;
@@ -179,7 +177,6 @@ a.projects__view-all_link {
     text-align: center;
     padding: 60px 0;
     font-size: 30px;
-    letter-spacing: -0.03em;
     color: #AD1818;
     border: 1px solid #AD1818;
     border-radius: 5px;
@@ -193,13 +190,12 @@ a.projects__view-all_link {
 /* ------------ PROJECTS ---------------- */
 .page__services {
     background-color: black;
-    padding: 154px 0;
+    padding: 154px 0 150px 0;
 }
 .services__title {
     color: white;
     margin-bottom: 8px;
     margin-left: 2px;
-    letter-spacing: -0.03em;
 }
 .services__list {
     display: flex;
@@ -212,7 +208,6 @@ a.projects__view-all_link {
     font-size: 30px;
     line-height: 40.98px;
     color: white;
-    letter-spacing: -0.03em;
     margin-left: 4px;
 }
 /* ------------ PROJECT ---------------- */
@@ -235,7 +230,6 @@ a.projects__view-all_link {
     bottom: 60px;
     font-size: 30px;
     line-height: 40.98px;
-    letter-spacing: -0.03em;
     width: 443px;
     color: white;
 
@@ -252,8 +246,6 @@ a.projects__view-all_link {
     font-size: 18px;
     line-height: 24.59px;
     position: relative;
-    letter-spacing: -0.05em;
-
 }
 .contacts__title::before {
     content: '';
@@ -274,21 +266,25 @@ a.projects__view-all_link {
     font-size: 60px;
     line-height: 60px;
     font-style: normal;
-    letter-spacing: -0.03em;
     padding-top: 2px;
-    padding-bottom: 4px;
+    transition: all 0.2s;
 }
 .contacts__tel {
-    width: 472px;
+    width: 485px;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    letter-spacing: -0.016em;
 }
 .contacts__mail {
     width: 412px;
     padding-top: 0;
+    padding-bottom: 6px;
+    opacity: .5;
+    border-bottom: 2px solid rgba(0, 0, 0, .5)
 }
-.contacts__mail:hover, .contacts__tel:hover {
-    color: gray;
-    border-bottom: 2px solid gray;
-}
+/* .contacts__mail:hover, .contacts__tel:hover {
+    
+} */
 /* ------------ FOOTER ---------------- */
 .footer {
     background-color: black;
@@ -317,16 +313,14 @@ a.footer__nav__link {
     color: white;
     line-height: 24.59px;
     transition: color .5s;
-    letter-spacing: -0.03em;
 }
 .footer__nav__link:hover {
     color: rgba(255, 255, 255, .5)
 }
 .footer p {
     padding: 91px 0 36px 5px;
-    letter-spacing: -0.03em;
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, .5);
     text-align: center;
 }
 
@@ -373,4 +367,3 @@ a.footer__nav__link {
         font-size: 24px;
     }
 }
-
