@@ -56,7 +56,7 @@ html {
 }
 /* ------------ Page ---------------- */
 .page {
-    padding-top: 70px;
+    padding-top: 63px;
     flex: 1 1 auto;
 }
 .page > *:not(:last-child) {
@@ -66,7 +66,10 @@ html {
 /* ------------ Header ---------------- */
 .header {
     width: 100%;
-    margin-top: 26px;
+    margin-top: 24px;
+}
+.header__logo img {
+    vertical-align: baseline;
 }
 .header__container {
     display: flex;
@@ -75,7 +78,7 @@ html {
     min-height: 43px;
 }
 .header__menu {
-    padding-right: 40px;
+    padding-right: 2px;
 }
 .menu-list {
     display: flex;
@@ -83,15 +86,18 @@ html {
     gap: 60px;
 }
 .item-link {
-    transition: all .3s;
+    transition: all .2s;
+    /* letter-spacing: -0.03em; */
 }
-.item-link:hover, .menu-list__item:hover {
-    color: #982e2eb5;
-    text-decoration: 2px underline;
+.item-link:hover {
+    color: gray;
+    border-bottom: 1px solid gray
 }
 /* ------------ MAIN BLOCK ---------------- */
 .main-block__title {
     font-size: 60px;
+    width: 956px;
+    letter-spacing: -0.03em;
     line-height: 60px;
     text-align: left;
 }
@@ -99,6 +105,7 @@ html {
     position: relative;
 }
 .box-text {
+    letter-spacing: -0.03em;
     position: absolute;
     bottom: 40px;
     left: 40px;
@@ -114,20 +121,21 @@ html {
 .about-us__container {
     width: 91.4%;
 }
-.about-us__container > *:not(:last-child){
-    margin-bottom: 30px;
-}
 .about-us__title {
     line-height: 24.59px;
 }
 .about-us__text {
     font-size: 45px;
+    width: 1048px;
     line-height: 61.47px;
+    letter-spacing: -0.03em;
+    margin-bottom: 21px;
 }
 .about-us__button {
     padding-top: 30px;
 }
 a.about-us__button_link {
+    font-size: 20px;
     background-color: #AD1818;
     color: white;
     padding: 20px 40px;
@@ -140,10 +148,16 @@ a.about-us__button_link {
 }
 
 /* ------------ PROJECTS ---------------- */
+.projects {
+    margin-top: 27px;
+}
 .projects__examples {
     display: flex;
     flex-direction: column;
     row-gap: 90px;
+}
+.projects__title {
+    margin-bottom: 33px;
 }
 .project > *:not(:last-child){
     margin-bottom: 15px;
@@ -151,6 +165,7 @@ a.about-us__button_link {
 .project__descript {
     font-size: 30px;
     line-height: 40.98px;
+    letter-spacing: -0.03em;
 }
 a.project__details {
     vertical-align: top;
@@ -158,14 +173,13 @@ a.project__details {
     line-height: 27.32px;
     color: #AD1818
 }
-.project__details:hover{
-    text-shadow: 0px 1px 1px #8d8c8c;
-}
+
 a.projects__view-all_link {
     display: block;
     text-align: center;
-    padding: 56px 0;
+    padding: 60px 0;
     font-size: 30px;
+    letter-spacing: -0.03em;
     color: #AD1818;
     border: 1px solid #AD1818;
     border-radius: 5px;
@@ -179,10 +193,13 @@ a.projects__view-all_link {
 /* ------------ PROJECTS ---------------- */
 .page__services {
     background-color: black;
-    padding: 150px 0;
+    padding: 154px 0;
 }
 .services__title {
     color: white;
+    margin-bottom: 8px;
+    margin-left: 2px;
+    letter-spacing: -0.03em;
 }
 .services__list {
     display: flex;
@@ -195,58 +212,120 @@ a.projects__view-all_link {
     font-size: 30px;
     line-height: 40.98px;
     color: white;
+    letter-spacing: -0.03em;
+    margin-left: 4px;
 }
 /* ------------ PROJECT ---------------- */
-.page__project img {
-    width: 100%;
-    object-fit: cover;
+
+.page__project {
+    background-image: url('/img/project.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-bottom: 200px;
+    height: 717px;
 }
 .page__project__container {
     position: relative;
-    padding-bottom: -150px;
+    height: 717px;
 }
 .page__project__container h3 {
     position: absolute;
-    bottom: 70px;
-    left: 0;
-    font-size: 40px;
+    left: 16px;
+    bottom: 60px;
+    font-size: 30px;
     line-height: 40.98px;
+    letter-spacing: -0.03em;
+    width: 443px;
     color: white;
-    z-index: 5;
-    max-width: 550px;
+
+
+
 }
 /* ------------ CONTACTS ---------------- */
 .contacts {
-    padding-bottom: 150px;
+    padding-bottom: 153px;
+    margin-top: -15px;
+    font-style: normal;
+}
+.contacts__title {
+    font-size: 18px;
+    line-height: 24.59px;
+    position: relative;
+    letter-spacing: -0.05em;
+
+}
+.contacts__title::before {
+    content: '';
+    display: block;
+    height: 22px;
+    width: 13px;
+    background-image: url('/img/tel-icon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: absolute;
+    top: -33px;
+
+
 }
 .contacts__tel, .contacts__mail {
     display: block;
     font-size: 60px;
     line-height: 60px;
+    font-style: normal;
+    letter-spacing: -0.03em;
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+.contacts__tel {
+    width: 472px;
+}
+.contacts__mail {
+    width: 412px;
+    padding-top: 0;
 }
 .contacts__mail:hover, .contacts__tel:hover {
-    text-decoration: 2px underline;
+    color: gray;
+    border-bottom: 2px solid gray;
 }
 /* ------------ FOOTER ---------------- */
 .footer {
     background-color: black;
 }
 .footer__nav {
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    column-gap: 55px;
+    padding-top: 60px;
+    width: 460px;
+    margin: 0 auto;
+}
+.footer__nav__about {
+    display: inline-block;
+    margin-right: 51px;
+}
+.footer__nav__projects {
+    margin-right: 54px;
+    display: inline-block;
+}
+.footer__nav__services {
+    margin-right: 52px;
+    display: inline-block;
+}
+.footer__nav__contacts {
+    display: inline-block;
 }
 a.footer__nav__link {
     color: white;
     line-height: 24.59px;
     transition: color .5s;
+    letter-spacing: -0.03em;
 }
 .footer__nav__link:hover {
     color: rgba(255, 255, 255, .5)
 }
 .footer p {
-    padding: 100px 0 10px 0;
+    padding: 91px 0 36px 5px;
+    letter-spacing: -0.03em;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.3);
     text-align: center;
 }
