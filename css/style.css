@@ -327,7 +327,7 @@ a.footer__nav__link {
 
 /* ------------ @MEDIA ---------------- */
 
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
     .header__container {
         padding: 0 20px;
     }
