@@ -290,13 +290,13 @@ a.projects__view-all_link {
     background-color: black;
 }
 .footer__nav {
-    padding-top: 60px;
+    padding-top: 59px;
     width: 460px;
     margin: 0 auto;
 }
 .footer__nav__about {
     display: inline-block;
-    margin-right: 51px;
+    margin-right: 50px;
 }
 .footer__nav__projects {
     margin-right: 54px;
