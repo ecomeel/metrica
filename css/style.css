@@ -351,6 +351,9 @@ a.footer__nav__link {
     .page__project__title {
         padding-left: 20px;
     }
+    .footer__nav {
+        width: 600px;
+    }
     .footer__nav__link {
         font-size: 30px;
     }
