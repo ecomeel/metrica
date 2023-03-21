@@ -44,6 +44,9 @@ div {
         background-color: black;
         padding: 152px 0 150px 0;
     }
+    &__reviews {
+        padding: 150px 0 150px 0;
+    }
     &__app-project {
         background-image: url("../img/app-project/project.jpg");
         background-size: cover;
@@ -62,21 +65,18 @@ div {
 .menu__link {
     transition: all .2s;
     text-transform: uppercase;
-
     &:hover {
         opacity: .5;
     }
 }
-
 .title {
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
-
 .subtitle {
     font-size: 30px;
     line-height: 40.98px;
 }
-
 .button {
     display: block;
     text-align: center;
@@ -114,6 +114,7 @@ div {
 .main-block {
     &__title {
         font-size: 60px;
+        text-transform:none;
         width: 956px;
         line-height: 60px;
         text-align: left;
@@ -147,7 +148,7 @@ div {
         &-link {
             font-size: 20px;
             background-color: $red-color;
-            color: #fff;
+            color: #fff !important;
             padding: 20px 40px;
             border-radius: 5px;
             transition: all .5s;
@@ -158,7 +159,6 @@ div {
             }
         }
     }
-
     &__text {
         font-size: 45px;
         width: 1048px;
@@ -257,6 +257,38 @@ div {
             color: $red-color;
             background-color: #fff;
             border: 1px solid $red-color;
+        }
+    }
+}
+
+.reviews {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 80px;
+        column-gap: 51px;
+    }
+    .review {
+        flex: 1 0 49%;
+
+        &__title {
+            margin-bottom: 14px;
+            font-size: 45px;
+            line-height: 61.47px;
+        }
+        &__text {
+            text-align: left;
+            font-size: 22px;
+            line-height: 30.05px;
+        }
+        &:nth-child(1) {
+            max-width: 528px;
+        }
+        &:nth-child(2) {
+            max-width: 505px;
+        }
+        &:nth-child(3) {
+            max-width: 861px;
         }
     }
 }
