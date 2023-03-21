@@ -1,0 +1,327 @@
+@import "reset/reset";
+@import "templates/temps";
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular);
+
+
+// Start styles
+
+html,
+body {
+    height: 100%;
+    line-height: 24.59px;
+    font-size: 18px;
+    color: #121212;
+    font-family: 'Manrope';
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+div {
+    letter-spacing: -0.03em;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+._container {
+    max-width: 1150px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+.page {
+    padding-top: 63px;
+    &__services {
+        background-color: black;
+        padding: 158px 0 150px 0;
+    }
+    &__app-project {
+        background-image: url("../img/project.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        margin-bottom: 200px;
+        height: 717px;
+    }
+    &>*:not(:last-child) {
+        padding-bottom: 146px;
+    }
+
+}
+
+// Common styles
+.menu__link {
+    transition: all .2s;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 30px;
+    line-height: 40.98px;
+}
+
+
+// Layout
+.header {
+    margin-top: 24px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 43px;
+    }
+
+    .menu {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+
+        &__link:hover {
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+        }
+    }
+}
+
+.main-block {
+    &__title {
+        font-size: 60px;
+        width: 956px;
+        line-height: 60px;
+        text-align: left;
+    }
+
+    &__box {
+        position: relative;
+    }
+
+    &__img-text {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        color: white;
+        line-height: 27.32px;
+        font-size: 20px;
+        width: 430px;
+        height: 81px;
+        background-color: rgba(0, 0, 0, .1);
+    }
+}
+
+.about-us {
+    &__container {
+        width: 91.4%;
+    }
+
+    &__button {
+        padding-top: 28px;
+
+        &-link {
+            font-size: 20px;
+            background-color: #AD1818;
+            color: white !important;
+            padding: 20px 40px;
+            border-radius: 5px;
+            transition: all .5s;
+
+            &:hover {
+                background-color: #ac733fb5;
+                box-shadow: 2px 2px 5px gray;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 45px;
+        width: 1048px;
+        line-height: 61.47px;
+        margin-bottom: 21px;
+        margin-left: 2px;
+    }
+
+
+}
+
+.projects {
+    margin-top: 25px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 90px;
+    }
+
+    &__title {
+        margin-bottom: 33px;
+    }
+
+    &__list &__button {
+        display: block;
+        text-align: center;
+        padding: 60px 0;
+        font-size: 30px;
+        color: #AD1818;
+        border: 1px solid #AD1818;
+        border-radius: 5px;
+        transition: all 1s;
+
+        &:hover {
+            background-color: #ad1818;
+            color: white;
+        }
+    }
+
+    .project {
+        &>*:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &__details {
+            vertical-align: top;
+            font-size: 20px;
+            line-height: 27.32px;
+            color: #AD1818
+        }
+    }
+
+}
+
+.services {
+    &__title {
+        color: white;
+        margin-bottom: 8px;
+        margin-left: 2px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        padding-top: 30px;
+    }
+
+    .service__title {
+        padding-top: 15px;
+        color: white;
+        margin-left: 4px;
+    }
+}
+
+.app-project {
+    &__container {
+        position: relative;
+        height: 717px;
+    }
+
+    &__title {
+        position: absolute;
+        left: 16px;
+        bottom: 60px;
+        font-size: 30px;
+        line-height: 40.98px;
+        width: 443px;
+        color: white;
+    }
+}
+
+.contacts {
+    padding-bottom: 153px;
+    margin-top: -14px;
+
+    &__title {
+        position: relative;
+        font-style: normal;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 22px;
+            width: 13px;
+            background-image: url('/img/tel-icon.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+            position: absolute;
+            top: -33px;
+        }
+    }
+
+    &__tel {
+        @extend %contact;
+        margin-top: 32px;
+        width: 485px;
+        padding-top: 3px;
+        padding-bottom: 0px;
+        letter-spacing: -0.016em;
+    }
+
+    &__mail {
+        @extend %contact;
+        margin-top: 25px;
+        width: 412px;
+        padding-bottom: 6px;
+        opacity: .5;
+        border-bottom: 2px solid rgba(0, 0, 0, .5)
+    }
+}
+
+.footer {
+    background-color: black;
+
+    &__nav {
+        padding-top: 60px;
+        width: 460px;
+        margin: 0 auto;
+    }
+
+    &__item_about {
+        margin-right: 50px;
+    }
+
+    &__item_projects {
+        margin-right: 54px;
+    }
+
+    &__item_services {
+        margin-right: 52px;
+    }
+
+    &__list &__item-link {
+        color: white;
+        line-height: 24.59px;
+        transition: color .5s;
+
+        &:hover {
+            color: rgba(255, 255, 255, .5)
+        }
+    }
+
+    &__text {
+        padding: 91px 0 36px 5px;
+        font-size: 20px;
+        color: rgba(255, 255, 255, .5);
+        text-align: center;
+    }
+
+    .menu__item {
+        display: inline-block;
+    }
+}
