@@ -1,5 +1,6 @@
 @import "reset/reset";
 @import "templates/temps";
+@import "vars/vars";
 @import url(https://fonts.googleapis.com/css?family=Manrope:regular);
 
 
@@ -41,10 +42,10 @@ div {
     padding-top: 63px;
     &__services {
         background-color: black;
-        padding: 158px 0 150px 0;
+        padding: 152px 0 150px 0;
     }
     &__app-project {
-        background-image: url("../img/project.jpg");
+        background-image: url("../img/app-project/project.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50%;
@@ -76,6 +77,15 @@ div {
     line-height: 40.98px;
 }
 
+.button {
+    display: block;
+    text-align: center;
+    padding: 56px 0;
+    font-size: 30px;
+    line-height: 40.98px;
+    border-radius: 5px;
+    transition: all .5s;
+}
 
 // Layout
 .header {
@@ -117,7 +127,7 @@ div {
         position: absolute;
         bottom: 40px;
         left: 40px;
-        color: white;
+        color: #fff;
         line-height: 27.32px;
         font-size: 20px;
         width: 430px;
@@ -136,8 +146,8 @@ div {
 
         &-link {
             font-size: 20px;
-            background-color: #AD1818;
-            color: white !important;
+            background-color: $red-color;
+            color: #fff;
             padding: 20px 40px;
             border-radius: 5px;
             transition: all .5s;
@@ -174,18 +184,11 @@ div {
     }
 
     &__list &__button {
-        display: block;
-        text-align: center;
-        padding: 60px 0;
-        font-size: 30px;
-        color: #AD1818;
-        border: 1px solid #AD1818;
-        border-radius: 5px;
-        transition: all 1s;
-
+        color: $red-color;
+        border: 1px solid $red-color;
         &:hover {
-            background-color: #ad1818;
-            color: white;
+            background-color: $red-color;
+            color: #fff;
         }
     }
 
@@ -198,30 +201,63 @@ div {
             vertical-align: top;
             font-size: 20px;
             line-height: 27.32px;
-            color: #AD1818
+            color: $red-color;
         }
     }
 
 }
 
 .services {
+    margin-top: 2px;
     &__title {
-        color: white;
+        color: #fff;
         margin-bottom: 8px;
         margin-left: 2px;
+        margin-bottom: 30px;
     }
 
     &__list {
+        margin-bottom: 106px;
         display: flex;
-        flex-direction: column;
-        row-gap: 60px;
-        padding-top: 30px;
+        flex-wrap: wrap;
+        column-gap: 11px;
+        row-gap: 40px;
+
     }
 
-    .service__title {
-        padding-top: 15px;
-        color: white;
-        margin-left: 4px;
+    .service {
+        position: relative;
+        max-width: 567px;
+        &__img {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        &__title {
+            max-width: 250px;
+            color: #fff;
+            margin-left: 4px;
+        }
+        &__price {
+            position: absolute;
+            top: 31px;
+            left: 30px;
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-size: 22px;
+            line-height: 30.05px;
+            color: #fff;
+            background-color: $red-color;
+        }
+    }
+    &__container &__button{
+        color: #fff;
+        background-color: $red-color;
+        &:hover {
+            color: $red-color;
+            background-color: #fff;
+            border: 1px solid $red-color;
+        }
     }
 }
 
@@ -255,7 +291,7 @@ div {
             display: block;
             height: 22px;
             width: 13px;
-            background-image: url('/img/tel-icon.png');
+            background-image: url('/img/contacts/tel-icon.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50%;
@@ -284,7 +320,7 @@ div {
 }
 
 .footer {
-    background-color: black;
+    background-color: #000;
 
     &__nav {
         padding-top: 60px;
