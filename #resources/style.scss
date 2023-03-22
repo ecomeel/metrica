@@ -4,8 +4,7 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:regular);
 
 
-// Start styles
-
+// Initial styles
 html,
 body {
     height: 100%;
@@ -15,7 +14,9 @@ body {
     font-family: 'Manrope';
     scroll-behavior: smooth;
 }
-
+img {
+    width: 100%;
+}
 h1,
 h2,
 h3,
@@ -28,16 +29,10 @@ div {
     letter-spacing: -0.03em;
 }
 
-.wrapper {
-    min-height: 100%;
-    overflow: hidden;
-}
-
 ._container {
     max-width: 1150px;
     margin: 0 auto;
     box-sizing: content-box;
-    padding: 0 15px;
 }
 
 .page {
@@ -329,14 +324,12 @@ div {
     &__title {
         position: absolute;
         top: 60px;
-        left: 14px;
         color: #fff;
         font-size: 22px;
         line-height: 30.05px;
     }
     &__subtitle {
         position: absolute;
-        left: 16px;
         bottom: 60px;
         font-size: 30px;
         line-height: 40.98px;
@@ -353,6 +346,7 @@ div {
     &__communication {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
     }
     &__tel {
         @extend %contact;
@@ -424,3 +418,5 @@ div {
         display: inline-block;
     }
 }
+
+// Media Quares
