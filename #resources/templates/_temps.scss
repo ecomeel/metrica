@@ -6,3 +6,14 @@
     padding-top: 2px;
     transition: all 0.2s;
 }
+
+%contact-icon {
+    position: absolute;
+    top: -36px;
+    content: '';
+    display: block;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}

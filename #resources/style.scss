@@ -52,13 +52,15 @@ div {
         padding: 154px 0 150px 0;
     }
 
-    &__app-project {
-        background-image: url("../img/app-project/project.jpg");
+    &__projects-galary {
+        background-image: url("../img/galary/project.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50%;
-        margin-bottom: 200px;
         height: 717px;
+    }
+    &__contacts {
+        padding: 150px 0;
     }
 
     &>*:not(:last-child) {
@@ -318,14 +320,21 @@ div {
     }
 }
 
-.app-project {
+.galary {
     &__container {
         margin-top: 16px;
         position: relative;
         height: 717px;
     }
-
     &__title {
+        position: absolute;
+        top: 60px;
+        left: 14px;
+        color: #fff;
+        font-size: 22px;
+        line-height: 30.05px;
+    }
+    &__subtitle {
         position: absolute;
         left: 16px;
         bottom: 60px;
@@ -337,43 +346,39 @@ div {
 }
 
 .contacts {
-    padding-bottom: 153px;
-    margin-top: -14px;
-
     &__title {
-        position: relative;
         font-style: normal;
-
-        &::before {
-            content: '';
-            display: block;
-            height: 22px;
-            width: 13px;
-            background-image: url('/img/contacts/tel-icon.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50%;
-            position: absolute;
-            top: -33px;
-        }
+        margin-bottom: 74px;
     }
-
+    &__communication {
+        width: 100%;
+        display: flex;
+    }
     &__tel {
         @extend %contact;
-        margin-top: 32px;
-        width: 485px;
-        padding-top: 3px;
-        padding-bottom: 0px;
-        letter-spacing: -0.016em;
+        position: relative;
+        letter-spacing: -0.02em;
+        margin-right: 108px;
+        &::before {
+            background-image: url('../img/contacts/tel-icon.png');
+            @extend %contact-icon;
+            top: -48px;
+            width: 12px;
+        }
     }
 
     &__mail {
         @extend %contact;
-        margin-top: 25px;
-        width: 412px;
-        padding-bottom: 6px;
-        opacity: .5;
-        border-bottom: 2px solid rgba(0, 0, 0, .5)
+        position: relative;
+        margin-top: -12px;
+        padding-bottom: 10px;
+        color: rgba(0, 0, 0, .5);
+        border-bottom: 2px solid rgba(0, 0, 0, .5);
+        &::before {
+            background-image: url('../img/contacts/mail-icon.png');
+            width: 22px;
+            @extend %contact-icon;
+        }
     }
 }
 
@@ -381,7 +386,7 @@ div {
     background-color: #000;
 
     &__nav {
-        padding-top: 60px;
+        padding-top: 57px;
         width: 460px;
         margin: 0 auto;
     }
