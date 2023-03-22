@@ -82,7 +82,7 @@ div {
   padding: 152px 0 150px 0;
 }
 .page__reviews {
-  padding: 150px 0 150px 0;
+  padding: 154px 0 150px 0;
 }
 .page__app-project {
   background-image: url("../img/app-project/project.jpg");
@@ -93,7 +93,7 @@ div {
   height: 717px;
 }
 .page > *:not(:last-child) {
-  padding-bottom: 146px;
+  padding-bottom: 145px;
 }
 
 .menu__link {
@@ -164,8 +164,18 @@ div {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.about-us {
+  padding-top: 2px;
+}
 .about-us__container {
   width: 91.4%;
+}
+.about-us__text {
+  font-size: 45px;
+  width: 1048px;
+  line-height: 61.47px;
+  margin-bottom: 21px;
+  margin-left: 3px;
 }
 .about-us__button {
   padding-top: 28px;
@@ -181,13 +191,6 @@ div {
 .about-us__button-link:hover {
   background-color: rgba(172, 115, 63, 0.7098039216);
   box-shadow: 2px 2px 5px gray;
-}
-.about-us__text {
-  font-size: 45px;
-  width: 1048px;
-  line-height: 61.47px;
-  margin-bottom: 21px;
-  margin-left: 2px;
 }
 
 .projects {
@@ -229,11 +232,11 @@ div {
   margin-bottom: 30px;
 }
 .services__list {
-  margin-bottom: 106px;
+  margin-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 11px;
-  row-gap: 40px;
+  column-gap: 13px;
+  row-gap: 47px;
 }
 .services .service {
   position: relative;
@@ -241,12 +244,12 @@ div {
 }
 .services .service__img {
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 .services .service__title {
   max-width: 250px;
   color: #fff;
-  margin-left: 4px;
+  margin-left: 3px;
 }
 .services .service__price {
   position: absolute;
@@ -273,16 +276,18 @@ div {
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 80px;
   column-gap: 51px;
 }
 .reviews .review {
   flex: 1 0 49%;
 }
+.reviews .review:not(:last-child) {
+  margin-bottom: 80px;
+}
 .reviews .review__title {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   font-size: 45px;
-  line-height: 61.47px;
+  line-height: 60.5px;
 }
 .reviews .review__text {
   text-align: left;
@@ -300,6 +305,7 @@ div {
 }
 
 .app-project__container {
+  margin-top: 16px;
   position: relative;
   height: 717px;
 }
