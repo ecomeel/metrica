@@ -15,7 +15,9 @@ body {
     font-family: 'Manrope';
     scroll-behavior: smooth;
 }
-
+img {
+    width: 100%;
+}
 h1,
 h2,
 h3,
@@ -26,11 +28,6 @@ p,
 a,
 div {
     letter-spacing: -0.03em;
-}
-
-.wrapper {
-    min-height: 100%;
-    overflow: hidden;
 }
 
 ._container {
