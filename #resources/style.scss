@@ -419,4 +419,15 @@ div {
     }
 }
 
-// Media Quares
+// MEDIA QUERY
+@media (max-width: 1200px) {
+    ._container {
+        padding: 0 16px;
+    }
+}
+@media (max-width: 960px) {
+    img {
+        width: 50%;
+    }
+}
+@media (min-width: 768px) {}

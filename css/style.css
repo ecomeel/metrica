@@ -400,4 +400,15 @@ div {
 }
 .footer .menu__item {
   display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  ._container {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 960px) {
+  img {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
