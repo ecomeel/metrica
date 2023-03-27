@@ -93,8 +93,8 @@ div {
 .page__reviews {
   padding: 154px 0 150px 0;
 }
-.page__projects-galary {
-  background-image: url("../img/galary/project.jpg");
+.page__projects-gallery {
+  background-image: url("../img/gallery/project.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -162,6 +162,11 @@ div {
 }
 .main-block__box {
   position: relative;
+  height: 500px;
+  background-image: url("../img/main-block/main-pict2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
 }
 .main-block__img-text {
   position: absolute;
@@ -183,7 +188,7 @@ div {
 }
 .about-us__text {
   font-size: 45px;
-  width: 1048px;
+  max-width: 1048px;
   line-height: 61.47px;
   margin-bottom: 21px;
   margin-left: 3px;
@@ -215,15 +220,22 @@ div {
 .projects__title {
   margin-bottom: 33px;
 }
-.projects__list .projects__button {
-  color: #AD1818;
+.projects__button {
+  margin-top: 90px;
+  color: #AD1818 !important;
   border: 1px solid #AD1818;
 }
-.projects__list .projects__button:hover {
+.projects__button:hover {
   background-color: #AD1818;
   color: #fff;
 }
-.projects .project > *:not(:last-child) {
+.projects .project__img {
+  height: 450px;
+  object-fit: cover;
+  object-position: 50% 70%;
+  margin-bottom: 15px;
+}
+.projects .project__title {
   margin-bottom: 15px;
 }
 .projects .project__details {
@@ -251,7 +263,7 @@ div {
 }
 .services .service {
   position: relative;
-  max-width: 567px;
+  flex: 1 0 47%;
 }
 .services .service__img {
   width: 100%;
@@ -290,7 +302,7 @@ div {
   column-gap: 51px;
 }
 .reviews .review {
-  flex: 1 0 49%;
+  flex: 1 0 47%;
 }
 .reviews .review:not(:last-child) {
   margin-bottom: 80px;
@@ -305,29 +317,23 @@ div {
   font-size: 22px;
   line-height: 30.05px;
 }
-.reviews .review:nth-child(1) {
-  max-width: 528px;
-}
-.reviews .review:nth-child(2) {
-  max-width: 505px;
-}
 .reviews .review:nth-child(3) {
-  max-width: 861px;
+  margin-right: 290px;
 }
 
-.galary__container {
+.gallery__container {
   margin-top: 16px;
   position: relative;
   height: 717px;
 }
-.galary__title {
+.gallery__title {
   position: absolute;
   top: 60px;
   color: #fff;
   font-size: 22px;
   line-height: 30.05px;
 }
-.galary__subtitle {
+.gallery__subtitle {
   position: absolute;
   bottom: 60px;
   font-size: 30px;
@@ -408,7 +414,94 @@ div {
   }
 }
 @media (max-width: 960px) {
-  img {
-    width: 50%;
+  .page > *:not(:last-child) {
+    padding-bottom: 120px;
+  }
+  .page__reviews {
+    padding: 120px 0 120px 0;
+  }
+  .page__projects-gallery {
+    height: 536px;
+  }
+  .page__contacts {
+    padding: 120px 0 80px;
+  }
+  .subtitle {
+    font-size: 25px;
+    line-height: 34.15px;
+  }
+  .main-block__title {
+    font-size: 50px;
+    max-width: 802px;
+  }
+  .main-block__img-text {
+    bottom: 30px;
+  }
+  .about-us__text {
+    max-width: 690px;
+    font-size: 35px;
+    line-height: 47.81px;
+  }
+  .projects {
+    padding-bottom: 103px !important;
+  }
+  .projects__list {
+    row-gap: 80px;
+  }
+  .projects__button {
+    margin-top: 102px;
+  }
+  .projects .project__img {
+    margin-bottom: 10px;
+  }
+  .services__list {
+    margin-bottom: 80px;
+  }
+  .services .service__img {
+    height: 315px;
+    margin-bottom: 15px;
+  }
+  .reviews__list {
+    column-gap: 10px;
+  }
+  .reviews .review__title {
+    font-size: 35px;
+    line-height: 47.81px;
+    margin-bottom: 25px;
+  }
+  .reviews .review__text {
+    font-size: 20px;
+    line-height: 27.32px;
+  }
+  .reviews .review:nth-child(3) {
+    margin-right: 250px;
+  }
+  .gallery__container {
+    height: 536px;
+  }
+  .gallery__title {
+    top: 80px;
+    left: 50px;
+    font-size: 20px;
+    line-height: 27.32px;
+  }
+  .gallery__subtitle {
+    bottom: 80px;
+    left: 50px;
+    font-size: 25px;
+    line-height: 34.15px;
+    width: 375px;
+  }
+  .contacts__tel {
+    font-size: 45px;
+    margin-right: 118px;
+  }
+  .contacts__mail {
+    font-size: 45px;
+  }
+}
+@media (max-width: 810px) {
+  .main-block__title {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

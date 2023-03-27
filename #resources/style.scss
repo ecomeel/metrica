@@ -14,9 +14,11 @@ body {
     font-family: 'Manrope';
     scroll-behavior: smooth;
 }
+
 img {
     width: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -47,13 +49,14 @@ div {
         padding: 154px 0 150px 0;
     }
 
-    &__projects-galary {
-        background-image: url("../img/galary/project.jpg");
+    &__projects-gallery {
+        background-image: url("../img/gallery/project.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50%;
         height: 717px;
     }
+
     &__contacts {
         padding: 150px 0;
     }
@@ -129,6 +132,11 @@ div {
 
     &__box {
         position: relative;
+        height: 500px;
+        background-image: url('../img/main-block/main-pict2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
     }
 
     &__img-text {
@@ -146,6 +154,7 @@ div {
 
 .about-us {
     padding-top: 2px;
+
     &__container {
         width: 91.4%;
     }
@@ -153,7 +162,7 @@ div {
 
     &__text {
         font-size: 45px;
-        width: 1048px;
+        max-width: 1048px;
         line-height: 61.47px;
         margin-bottom: 21px;
         margin-left: 3px;
@@ -180,6 +189,7 @@ div {
 
 .projects {
     margin-top: 25px;
+
     &__list {
         display: flex;
         flex-direction: column;
@@ -190,8 +200,9 @@ div {
         margin-bottom: 33px;
     }
 
-    &__list &__button {
-        color: $red-color;
+    &__button {
+        margin-top: 90px;
+        color: $red-color !important;
         border: 1px solid $red-color;
 
         &:hover {
@@ -201,16 +212,22 @@ div {
     }
 
     .project {
-        &>*:not(:last-child) {
+        &__img {
+            height: 450px;
+            object-fit: cover;
+            object-position: 50% 70%;
             margin-bottom: 15px;
         }
-
+        &__title {
+            margin-bottom: 15px;
+        }
         &__details {
             vertical-align: top;
             font-size: 20px;
             line-height: 27.32px;
             color: $red-color;
         }
+
     }
 
 }
@@ -236,7 +253,7 @@ div {
 
     .service {
         position: relative;
-        max-width: 567px;
+        flex: 1 0 47%;
 
         &__img {
             width: 100%;
@@ -284,7 +301,8 @@ div {
     }
 
     .review {
-        flex: 1 0 49%;
+        flex: 1 0 47%;
+
         &:not(:last-child) {
             margin-bottom: 80px;
         }
@@ -302,25 +320,27 @@ div {
         }
 
         &:nth-child(1) {
-            max-width: 528px;
+            // max-width: 528px;
         }
 
         &:nth-child(2) {
-            max-width: 505px;
+            // max-width: 505px;
         }
 
         &:nth-child(3) {
-            max-width: 861px;
+            // max-width: 861px;
+            margin-right: 290px;
         }
     }
 }
 
-.galary {
+.gallery {
     &__container {
         margin-top: 16px;
         position: relative;
         height: 717px;
     }
+
     &__title {
         position: absolute;
         top: 60px;
@@ -328,6 +348,7 @@ div {
         font-size: 22px;
         line-height: 30.05px;
     }
+
     &__subtitle {
         position: absolute;
         bottom: 60px;
@@ -343,16 +364,19 @@ div {
         font-style: normal;
         margin-bottom: 74px;
     }
+
     &__communication {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
+
     &__tel {
         @extend %contact;
         position: relative;
         letter-spacing: -0.02em;
         margin-right: 108px;
+
         &::before {
             background-image: url('../img/contacts/tel-icon.png');
             @extend %contact-icon;
@@ -368,6 +392,7 @@ div {
         padding-bottom: 10px;
         color: rgba(0, 0, 0, .5);
         border-bottom: 2px solid rgba(0, 0, 0, .5);
+
         &::before {
             background-image: url('../img/contacts/mail-icon.png');
             width: 22px;
@@ -424,10 +449,124 @@ div {
     ._container {
         padding: 0 16px;
     }
+
 }
+
 @media (max-width: 960px) {
-    img {
-        width: 50%;
+    .page {
+        &>*:not(:last-child) {
+            padding-bottom: 120px;
+        }
+        &__reviews {
+            padding: 120px 0 120px 0;
+        }
+        &__projects-gallery {
+            height: 536px;
+        }
+        &__contacts {
+            padding: 120px 0 80px;
+        }
+    }
+
+    .subtitle {
+        font-size: 25px;
+        line-height: 34.15px;
+    }
+
+    .main-block {
+        &__title {
+            font-size: 50px;
+            max-width: 802px;
+        }
+
+        &__img-text {
+            bottom: 30px;
+        }
+    }
+
+    .about-us {
+        &__text {
+            max-width: 690px;
+            font-size: 35px;
+            line-height: 47.81px;
+        }
+    }
+
+    .projects {
+        padding-bottom: 103px !important;
+        &__list {
+            row-gap: 80px;
+        }
+        &__button {
+            margin-top: 102px;
+        }
+        .project {
+            &__img {
+                margin-bottom: 10px ;
+            }
+        }
+    }
+    .services {
+        &__list {
+            margin-bottom: 80px;
+        }
+        .service {
+            &__img {
+                height: 315px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .reviews {
+        &__list {
+            column-gap: 10px;
+        }
+        .review {
+            &__title {
+                font-size: 35px;
+                line-height: 47.81px;
+                margin-bottom: 25px;
+            }
+            &__text {
+                font-size: 20px;
+                line-height: 27.32px;
+            }
+            &:nth-child(3) {
+                margin-right: 250px;
+            }
+        }
+    }
+    .gallery {
+        &__container {
+            height: 536px;
+        }
+        &__title {
+            top: 80px;
+            left: 50px;
+            font-size: 20px;
+            line-height: 27.32px;
+        }
+        &__subtitle {
+            bottom: 80px;
+            left: 50px;
+            font-size: 25px;
+            line-height: 34.15px;
+            width: 375px;
+        }
+    }
+    .contacts {
+        &__tel {
+            font-size: 45px;
+            margin-right: 118px;
+        }
+        &__mail {
+            font-size: 45px;
+        }
+    }
+}
+@media (max-width: 810px) {
+    .main-block__title {
+        max-width: 100%;
     }
 }
 @media (min-width: 768px) {}
