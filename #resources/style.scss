@@ -359,7 +359,6 @@ div {
     }
 
     &__communication {
-        // width: 100%;
         display: flex;
     }
 
@@ -449,15 +448,12 @@ div {
         }
 
         &__projects {
+            margin-top: 20px;
             padding-bottom: 103px !important;
         }
 
         &__reviews {
-            padding: 120px 0 120px 0;
-        }
-
-        &__projects-gallery {
-            height: 536px;
+            padding-top: 120px;
         }
 
         &__contacts {
@@ -468,6 +464,10 @@ div {
     .subtitle {
         font-size: 25px;
         line-height: 34.15px;
+        margin-bottom: 10px !important;
+    }
+    .title {
+        margin-bottom: 30px;
     }
 
     .header {
@@ -496,6 +496,7 @@ div {
             max-width: 690px;
             font-size: 35px;
             line-height: 47.81px;
+            margin-bottom: 55px;
         }
     }
 
@@ -510,14 +511,15 @@ div {
 
         .project {
             &__img {
-                margin-bottom: 10px;
+                margin-bottom: 15px;
             }
         }
     }
 
     .services {
         &__list {
-            margin-bottom: 80px;
+            margin-bottom: 72px;
+            row-gap: 80px;
         }
 
         .service {
@@ -525,12 +527,32 @@ div {
                 height: 315px;
                 margin-bottom: 15px;
             }
+            &__title {
+                max-width: 100%;
+                margin-left: 0;
+            }
+            &__price {
+                left: 32px;
+                padding: 7px 27px 6px 26px;
+                font-size: 20px;
+                line-height: 27.32px;
+            }
+            &:nth-child(3), &:nth-child(4) {
+                .service__img {
+                    margin-bottom: 14px;
+                }
+                .service__title {
+                    font-size: 30px;
+                    line-height: 40.98px;
+                }
+            }
         }
     }
 
     .reviews {
         &__list {
             column-gap: 10px;
+            row-gap: 78px;
         }
 
         .review {
@@ -542,9 +564,18 @@ div {
 
             &__text {
                 font-size: 20px;
-                line-height: 27.32px;
+                line-height: 27.3px;
             }
 
+            &:nth-child(1) {
+                max-width: 459px;
+                margin-right: 4px;
+            }
+    
+            &:nth-child(2) {
+                max-width: 460px;
+            }
+    
             &:nth-child(3) {
                 margin-right: 250px;
             }
@@ -552,8 +583,11 @@ div {
     }
 
     .gallery {
+        height: 536px;
+
         &__container {
             height: 536px;
+            margin-top: 0;
         }
 
         &__title {
@@ -573,6 +607,9 @@ div {
     }
 
     .contacts {
+        &__title {
+            margin-bottom: 73px;
+        }
         &__tel {
             font-size: 45px;
             margin-right: 118px;
@@ -580,6 +617,8 @@ div {
 
         &__mail {
             font-size: 45px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid rgba(0, 0, 0, .5);
         }
     }
 }

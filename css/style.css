@@ -409,13 +409,11 @@ div {
     padding-bottom: 120px;
   }
   .page__projects {
+    margin-top: 20px;
     padding-bottom: 103px !important;
   }
   .page__reviews {
-    padding: 120px 0 120px 0;
-  }
-  .page__projects-gallery {
-    height: 536px;
+    padding-top: 120px;
   }
   .page__contacts {
     padding: 120px 0 80px;
@@ -423,6 +421,10 @@ div {
   .subtitle {
     font-size: 25px;
     line-height: 34.15px;
+    margin-bottom: 10px !important;
+  }
+  .title {
+    margin-bottom: 30px;
   }
   .header__menu {
     display: none;
@@ -441,6 +443,7 @@ div {
     max-width: 690px;
     font-size: 35px;
     line-height: 47.81px;
+    margin-bottom: 55px;
   }
   .projects__list {
     row-gap: 80px;
@@ -449,17 +452,36 @@ div {
     margin-top: 102px;
   }
   .projects .project__img {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .services__list {
-    margin-bottom: 80px;
+    margin-bottom: 72px;
+    row-gap: 80px;
   }
   .services .service__img {
     height: 315px;
     margin-bottom: 15px;
   }
+  .services .service__title {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .services .service__price {
+    left: 32px;
+    padding: 7px 27px 6px 26px;
+    font-size: 20px;
+    line-height: 27.32px;
+  }
+  .services .service:nth-child(3) .service__img, .services .service:nth-child(4) .service__img {
+    margin-bottom: 14px;
+  }
+  .services .service:nth-child(3) .service__title, .services .service:nth-child(4) .service__title {
+    font-size: 30px;
+    line-height: 40.98px;
+  }
   .reviews__list {
     column-gap: 10px;
+    row-gap: 78px;
   }
   .reviews .review__title {
     font-size: 35px;
@@ -468,13 +490,24 @@ div {
   }
   .reviews .review__text {
     font-size: 20px;
-    line-height: 27.32px;
+    line-height: 27.3px;
+  }
+  .reviews .review:nth-child(1) {
+    max-width: 459px;
+    margin-right: 4px;
+  }
+  .reviews .review:nth-child(2) {
+    max-width: 460px;
   }
   .reviews .review:nth-child(3) {
     margin-right: 250px;
   }
+  .gallery {
+    height: 536px;
+  }
   .gallery__container {
     height: 536px;
+    margin-top: 0;
   }
   .gallery__title {
     top: 80px;
@@ -489,12 +522,17 @@ div {
     line-height: 34.15px;
     width: 375px;
   }
+  .contacts__title {
+    margin-bottom: 73px;
+  }
   .contacts__tel {
     font-size: 45px;
     margin-right: 118px;
   }
   .contacts__mail {
     font-size: 45px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   }
 }
 @media (max-width: 810px) {
