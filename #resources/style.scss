@@ -122,7 +122,7 @@ div {
     &__box {
         position: relative;
         height: 500px;
-        background-image: url('../img/main-block/main-pict2.png');
+        background-image: url('../img/main-block/main-pict.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
@@ -257,15 +257,12 @@ div {
             color: #fff;
             background-color: $red-color;
         }
-
-        &:nth-child(3),
-        &:nth-child(4) {
-            .service__img {
-                margin-bottom: 17px;
-            }
+    }
+    .add-prop-service {
+        .service__img {
+            margin-bottom: 17px;
         }
     }
-
     &__container &__button {
         color: #fff;
         background-color: $red-color;
@@ -480,6 +477,7 @@ div {
 
         &__box {
             height: 400px;
+            background-image: url('../img/main-block/main-pict2.png');
         }
 
         &__img-text {
@@ -535,17 +533,15 @@ div {
                 font-size: 20px;
                 line-height: 27.32px;
             }
+        }
+        .add-prop-service {
+            .service__img {
+                margin-bottom: 14px;
+            }
 
-            &:nth-child(3),
-            &:nth-child(4) {
-                .service__img {
-                    margin-bottom: 14px;
-                }
-
-                .service__title {
-                    font-size: 30px;
-                    line-height: 40.98px;
-                }
+            .service__title {
+                font-size: 30px;
+                line-height: 40.98px;
             }
         }
     }
@@ -792,22 +788,20 @@ div {
                 left: 24px;
                 font-size: 14px;
                 line-height: 19.12px;
+            }            
+        }
+        .add-prop-service {
+            .service__img {
+                margin-bottom: 11px;
             }
 
-            &:nth-child(3),
-            &:nth-child(4) {
-                .service__img {
-                    margin-bottom: 11px;
-                }
+            .service__title {
+                font-size: 18px;
+                line-height: 24.59px;
+            }
 
-                .service__title {
-                    font-size: 18px;
-                    line-height: 24.59px;
-                }
-
-                .service__price {
-                    padding: 6px 25px;
-                }
+            .service__price {
+                padding: 6px 25px;
             }
         }
     }
