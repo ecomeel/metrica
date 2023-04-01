@@ -62,7 +62,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 h1,
@@ -84,27 +84,13 @@ div {
 }
 
 .page {
-  padding-top: 63px;
+  padding-top: 60px;
 }
-.page__services {
-  background-color: black;
-  padding: 152px 0 150px 0;
+.page > * {
+  padding-bottom: 150px;
 }
-.page__reviews {
-  padding: 154px 0 150px 0;
-}
-.page__projects-gallery {
-  background-image: url("../img/gallery/project.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  height: 717px;
-}
-.page__contacts {
-  padding: 150px 0;
-}
-.page > *:not(:last-child) {
-  padding-bottom: 145px;
+.page__services, .page__reviews, .page__contacts {
+  padding-top: 150px;
 }
 
 .menu__link {
@@ -113,6 +99,10 @@ div {
 }
 .menu__link:hover {
   opacity: 0.5;
+}
+
+.black-back {
+  background-color: #000;
 }
 
 .title {
@@ -128,7 +118,7 @@ div {
 .button {
   display: block;
   text-align: center;
-  padding: 56px 0;
+  padding: 54px 0;
   font-size: 30px;
   line-height: 40.98px;
   border-radius: 5px;
@@ -179,12 +169,6 @@ div {
   height: 81px;
 }
 
-.about-us {
-  padding-top: 2px;
-}
-.about-us__container {
-  width: 91.4%;
-}
 .about-us__text {
   font-size: 45px;
   max-width: 1048px;
@@ -216,7 +200,7 @@ div {
   row-gap: 90px;
 }
 .projects__title {
-  margin-bottom: 33px;
+  margin-bottom: 28px;
 }
 .projects__button {
   margin-top: 90px;
@@ -243,29 +227,26 @@ div {
   color: #AD1818;
 }
 
-.services {
-  margin-top: 2px;
-}
 .services__title {
   color: #fff;
   margin-bottom: 8px;
   margin-left: 2px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 .services__list {
-  margin-bottom: 100px;
+  margin-bottom: 108px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 13px;
-  row-gap: 47px;
+  column-gap: 11px;
+  row-gap: 45px;
 }
 .services .service {
   position: relative;
-  flex: 1 0 47%;
+  flex: 1 0 49%;
 }
 .services .service__img {
-  width: 100%;
-  margin-bottom: 23px;
+  height: 389px;
+  margin-bottom: 25px;
 }
 .services .service__title {
   max-width: 250px;
@@ -273,16 +254,19 @@ div {
   margin-left: 3px;
 }
 .services .service__price {
+  padding: 5px 20px;
   position: absolute;
-  top: 31px;
+  top: 32px;
   left: 30px;
   display: inline-block;
-  padding: 5px 20px;
   border-radius: 5px;
   font-size: 22px;
   line-height: 30.05px;
   color: #fff;
   background-color: #AD1818;
+}
+.services .service:nth-child(3) .service__img, .services .service:nth-child(4) .service__img {
+  margin-bottom: 17px;
 }
 .services__container .services__button {
   color: #fff;
@@ -294,33 +278,48 @@ div {
   border: 1px solid #AD1818;
 }
 
+.reviews__title {
+  margin-bottom: 32px;
+}
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 51px;
+  row-gap: 83px;
 }
 .reviews .review {
-  flex: 1 0 47%;
-}
-.reviews .review:not(:last-child) {
-  margin-bottom: 80px;
+  margin-left: -2px;
+  flex: 1 0 46%;
 }
 .reviews .review__title {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   font-size: 45px;
   line-height: 60.5px;
 }
 .reviews .review__text {
   text-align: left;
   font-size: 22px;
-  line-height: 30.05px;
+  line-height: 30.3px;
+}
+.reviews .review:nth-child(1) {
+  max-width: 528px;
+  margin-right: 54px;
+}
+.reviews .review:nth-child(2) {
+  max-width: 505px;
 }
 .reviews .review:nth-child(3) {
   margin-right: 290px;
 }
 
+.gallery {
+  background-image: url("../img/gallery/project.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  height: 717px;
+}
 .gallery__container {
-  margin-top: 16px;
+  margin-top: 10px;
   position: relative;
   height: 717px;
 }
@@ -360,18 +359,14 @@ div {
 .contacts__mail {
   position: relative;
   margin-top: -12px;
-  padding-bottom: 10px;
   color: rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 .contacts__mail::before {
   background-image: url("../img/contacts/mail-icon.png");
   width: 22px;
 }
 
-.footer {
-  background-color: #000;
-}
 .footer__nav {
   padding-top: 57px;
   width: 460px;

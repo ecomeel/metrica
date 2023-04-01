@@ -16,7 +16,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 h1,
@@ -38,31 +38,16 @@ div {
 }
 
 .page {
-    padding-top: 63px;
+    padding-top: 60px;
 
-    &__services {
-        background-color: black;
-        padding: 152px 0 150px 0;
+    &>* {
+        padding-bottom: 150px;
     }
 
-    &__reviews {
-        padding: 154px 0 150px 0;
-    }
-
-    &__projects-gallery {
-        background-image: url("../img/gallery/project.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        height: 717px;
-    }
-
+    &__services,
+    &__reviews,
     &__contacts {
-        padding: 150px 0;
-    }
-
-    &>*:not(:last-child) {
-        padding-bottom: 145px;
+        padding-top: 150px;
     }
 
 }
@@ -75,6 +60,10 @@ div {
     &:hover {
         opacity: .5;
     }
+}
+
+.black-back {
+    background-color: #000;
 }
 
 .title {
@@ -90,7 +79,7 @@ div {
 .button {
     display: block;
     text-align: center;
-    padding: 56px 0;
+    padding: 54px 0;
     font-size: 30px;
     line-height: 40.98px;
     border-radius: 5px;
@@ -152,13 +141,6 @@ div {
 }
 
 .about-us {
-    padding-top: 2px;
-
-    &__container {
-        width: 91.4%;
-    }
-
-
     &__text {
         font-size: 45px;
         max-width: 1048px;
@@ -194,7 +176,7 @@ div {
     }
 
     &__title {
-        margin-bottom: 33px;
+        margin-bottom: 28px;
     }
 
     &__button {
@@ -232,31 +214,29 @@ div {
 }
 
 .services {
-    margin-top: 2px;
-
     &__title {
         color: #fff;
         margin-bottom: 8px;
         margin-left: 2px;
-        margin-bottom: 30px;
+        margin-bottom: 32px;
     }
 
     &__list {
-        margin-bottom: 100px;
+        margin-bottom: 108px;
         display: flex;
         flex-wrap: wrap;
-        column-gap: 13px;
-        row-gap: 47px;
+        column-gap: 11px;
+        row-gap: 45px;
 
     }
 
     .service {
         position: relative;
-        flex: 1 0 47%;
+        flex: 1 0 49%;
 
         &__img {
-            width: 100%;
-            margin-bottom: 23px;
+            height: 389px;
+            margin-bottom: 25px;
         }
 
         &__title {
@@ -266,16 +246,23 @@ div {
         }
 
         &__price {
+            padding: 5px 20px;
             position: absolute;
-            top: 31px;
+            top: 32px;
             left: 30px;
             display: inline-block;
-            padding: 5px 20px;
             border-radius: 5px;
             font-size: 22px;
             line-height: 30.05px;
             color: #fff;
             background-color: $red-color;
+        }
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            .service__img {
+                margin-bottom: 17px;
+            }
         }
     }
 
@@ -292,22 +279,23 @@ div {
 }
 
 .reviews {
+    &__title {
+        margin-bottom: 32px;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
-        // row-gap: 80px;
-        column-gap: 51px;
+        row-gap: 83px;
     }
 
     .review {
-        flex: 1 0 47%;
+        margin-left: -2px;
+        flex: 1 0 46%;
 
-        &:not(:last-child) {
-            margin-bottom: 80px;
-        }
 
         &__title {
-            margin-bottom: 18px;
+            margin-bottom: 14px;
             font-size: 45px;
             line-height: 60.5px;
         }
@@ -315,16 +303,17 @@ div {
         &__text {
             text-align: left;
             font-size: 22px;
-            line-height: 30.05px;
+            line-height: 30.3px;
         }
 
-        // &:nth-child(1) {
-        //     max-width: 528px;
-        // }
+        &:nth-child(1) {
+            max-width: 528px;
+            margin-right: 54px;
+        }
 
-        // &:nth-child(2) {
-        //     max-width: 505px;
-        // }
+        &:nth-child(2) {
+            max-width: 505px;
+        }
 
         &:nth-child(3) {
             margin-right: 290px;
@@ -333,8 +322,14 @@ div {
 }
 
 .gallery {
+    background-image: url("../img/gallery/project.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 717px;
+
     &__container {
-        margin-top: 16px;
+        margin-top: 10px;
         position: relative;
         height: 717px;
     }
@@ -386,9 +381,8 @@ div {
         @extend %contact;
         position: relative;
         margin-top: -12px;
-        padding-bottom: 10px;
         color: rgba(0, 0, 0, .5);
-        border-bottom: 2px solid rgba(0, 0, 0, .5);
+        border-bottom: 1px solid rgba(0, 0, 0, .5);
 
         &::before {
             background-image: url('../img/contacts/mail-icon.png');
@@ -399,8 +393,6 @@ div {
 }
 
 .footer {
-    background-color: #000;
-
     &__nav {
         padding-top: 57px;
         width: 460px;
@@ -446,7 +438,7 @@ div {
     ._container {
         padding: 0 16px;
     }
-    
+
 
 }
 
@@ -455,9 +447,11 @@ div {
         &>*:not(:last-child) {
             padding-bottom: 120px;
         }
+
         &__projects {
             padding-bottom: 103px !important;
         }
+
         &__reviews {
             padding: 120px 0 120px 0;
         }
@@ -603,21 +597,27 @@ div {
 
     .page {
         padding-top: 51px;
+
         &>*:not(:last-child) {
             padding-bottom: 80px;
         }
+
         &__projects {
             padding-bottom: 144px !important;
         }
+
         &__services {
             padding: 80px 0;
         }
+
         &__reviews {
             padding-top: 80px;
         }
+
         &__projects-gallery {
             height: 408px;
         }
+
         &__contacts {
             padding-top: 80px;
         }
@@ -628,10 +628,12 @@ div {
         font-size: 14px;
         margin-bottom: 20px;
     }
+
     .subtitle {
         font-size: 18px;
         line-height: 24.59px;
     }
+
     .button {
         font-size: 22px;
         line-height: 30.05px;
@@ -676,6 +678,7 @@ div {
             font-size: 22px;
             line-height: 30.05px;
         }
+
         &__button {
             padding: 14.5px 27px;
             font-size: 16px;
@@ -686,19 +689,23 @@ div {
         &__list {
             row-gap: 49px;
         }
+
         .project {
             &__img {
                 height: 250px;
                 margin-bottom: 20px;
             }
+
             &__title {
                 margin-bottom: 11px;
             }
+
             &__details {
                 font-size: 16px;
                 line-height: 21.86px;
             }
         }
+
         &__button {
             margin-top: 60px;
         }
@@ -710,11 +717,13 @@ div {
             flex-direction: column;
             row-gap: 60px;
         }
+
         .service {
             &__img {
                 height: 240px;
                 margin-bottom: 10px;
             }
+
             &__price {
                 top: 23px;
                 left: 24px;
@@ -729,19 +738,23 @@ div {
             flex-direction: column;
             row-gap: 80px;
         }
+
         .review {
             &:not(:last-child) {
                 margin-bottom: 0px;
             }
+
             &__title {
                 margin-bottom: 10px;
                 font-size: 25px;
                 line-height: 34.15px;
             }
+
             &__text {
                 font-size: 16px;
                 line-height: 21.86px;
             }
+
             &:nth-child(3) {
                 margin-right: 0;
             }
@@ -752,12 +765,14 @@ div {
         &__container {
             height: 408px;
         }
+
         &__title {
             top: 61px;
             left: 12px;
             font-size: 14px;
             line-height: 19.12px;
         }
+
         &__subtitle {
             bottom: 60px;
             left: 13px;
@@ -770,14 +785,18 @@ div {
         &__title {
             margin-bottom: 0;
         }
+
         &__communication {
             // width: 100%;
             flex-direction: column;
         }
-        &__tel, &__mail {
+
+        &__tel,
+        &__mail {
             font-size: 35px;
             line-height: 45.62px;
             margin-top: 58px;
+
             &::before {
                 top: -32px;
             }
@@ -785,16 +804,19 @@ div {
 
         &__tel {
             margin-right: 0;
+
             &::before {
                 height: 16.5px;
                 width: 9.75px;
             }
 
         }
+
         &__mail {
             padding-bottom: 0;
             border-bottom: 0;
             color: #000;
+
             &::before {
                 width: 15px;
                 height: 12px;
@@ -807,19 +829,23 @@ div {
             padding-top: 30px;
             margin: 0 auto;
         }
+
         &__list {
             display: flex;
             column-gap: 30px;
             justify-content: center;
 
         }
+
         .menu__item {
             margin-right: 0;
         }
+
         &__item-link {
             font-size: 12px;
             line-height: 16.39px;
         }
+
         &__text {
             padding-top: 41px;
             padding-bottom: 26px;
