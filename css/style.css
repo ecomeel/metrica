@@ -62,7 +62,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 h1,
@@ -345,9 +345,7 @@ div {
   margin-bottom: 74px;
 }
 .contacts__communication {
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
 }
 .contacts__tel {
   position: relative;
@@ -525,6 +523,15 @@ div {
   .page__services {
     padding: 80px 0;
   }
+  .page__reviews {
+    padding-top: 80px;
+  }
+  .page__projects-gallery {
+    height: 408px;
+  }
+  .page__contacts {
+    padding-top: 80px;
+  }
   .title {
     font-size: 14px;
     margin-bottom: 20px;
@@ -586,5 +593,106 @@ div {
   }
   .projects__button {
     margin-top: 60px;
+  }
+  .services__list {
+    margin-bottom: 60px;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  .services .service__img {
+    height: 240px;
+    margin-bottom: 10px;
+  }
+  .services .service__price {
+    top: 23px;
+    left: 24px;
+    font-size: 14px;
+    line-height: 19.12px;
+  }
+  .reviews__list {
+    flex-direction: column;
+    row-gap: 80px;
+  }
+  .reviews .review:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .reviews .review__title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34.15px;
+  }
+  .reviews .review__text {
+    font-size: 16px;
+    line-height: 21.86px;
+  }
+  .reviews .review:nth-child(3) {
+    margin-right: 0;
+  }
+  .gallery__container {
+    height: 408px;
+  }
+  .gallery__title {
+    top: 61px;
+    left: 12px;
+    font-size: 14px;
+    line-height: 19.12px;
+  }
+  .gallery__subtitle {
+    bottom: 60px;
+    left: 13px;
+    font-size: 19px;
+    line-height: 25.97px;
+  }
+  .contacts__title {
+    margin-bottom: 0;
+  }
+  .contacts__communication {
+    flex-direction: column;
+  }
+  .contacts__tel, .contacts__mail {
+    font-size: 35px;
+    line-height: 45.62px;
+    margin-top: 58px;
+  }
+  .contacts__tel::before, .contacts__mail::before {
+    top: -32px;
+  }
+  .contacts__tel {
+    margin-right: 0;
+  }
+  .contacts__tel::before {
+    height: 16.5px;
+    width: 9.75px;
+  }
+  .contacts__mail {
+    padding-bottom: 0;
+    border-bottom: 0;
+    color: #000;
+  }
+  .contacts__mail::before {
+    width: 15px;
+    height: 12px;
+  }
+  .footer__nav {
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+  .footer__list {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+  }
+  .footer .menu__item {
+    margin-right: 0;
+  }
+  .footer__item-link {
+    font-size: 12px;
+    line-height: 16.39px;
+  }
+  .footer__text {
+    padding-top: 41px;
+    padding-bottom: 26px;
+    font-size: 13px;
+    line-height: 17.76px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -16,7 +16,7 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 h1,
@@ -327,7 +327,6 @@ div {
         // }
 
         &:nth-child(3) {
-            // max-width: 861px;
             margin-right: 290px;
         }
     }
@@ -365,9 +364,8 @@ div {
     }
 
     &__communication {
-        width: 100%;
+        // width: 100%;
         display: flex;
-        flex-wrap: wrap;
     }
 
     &__tel {
@@ -614,6 +612,15 @@ div {
         &__services {
             padding: 80px 0;
         }
+        &__reviews {
+            padding-top: 80px;
+        }
+        &__projects-gallery {
+            height: 408px;
+        }
+        &__contacts {
+            padding-top: 80px;
+        }
     }
 
     //COMMON STYLES 
@@ -631,7 +638,6 @@ div {
         padding-top: 36.21px;
         padding-bottom: 37.93px;
     }
-
 
     .header {
         &__logo {
@@ -699,6 +705,126 @@ div {
     }
 
     .services {
+        &__list {
+            margin-bottom: 60px;
+            flex-direction: column;
+            row-gap: 60px;
+        }
+        .service {
+            &__img {
+                height: 240px;
+                margin-bottom: 10px;
+            }
+            &__price {
+                top: 23px;
+                left: 24px;
+                font-size: 14px;
+                line-height: 19.12px;
+            }
+        }
+    }
 
+    .reviews {
+        &__list {
+            flex-direction: column;
+            row-gap: 80px;
+        }
+        .review {
+            &:not(:last-child) {
+                margin-bottom: 0px;
+            }
+            &__title {
+                margin-bottom: 10px;
+                font-size: 25px;
+                line-height: 34.15px;
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 21.86px;
+            }
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .gallery {
+        &__container {
+            height: 408px;
+        }
+        &__title {
+            top: 61px;
+            left: 12px;
+            font-size: 14px;
+            line-height: 19.12px;
+        }
+        &__subtitle {
+            bottom: 60px;
+            left: 13px;
+            font-size: 19px;
+            line-height: 25.97px;
+        }
+    }
+
+    .contacts {
+        &__title {
+            margin-bottom: 0;
+        }
+        &__communication {
+            // width: 100%;
+            flex-direction: column;
+        }
+        &__tel, &__mail {
+            font-size: 35px;
+            line-height: 45.62px;
+            margin-top: 58px;
+            &::before {
+                top: -32px;
+            }
+        }
+
+        &__tel {
+            margin-right: 0;
+            &::before {
+                height: 16.5px;
+                width: 9.75px;
+            }
+
+        }
+        &__mail {
+            padding-bottom: 0;
+            border-bottom: 0;
+            color: #000;
+            &::before {
+                width: 15px;
+                height: 12px;
+            }
+        }
+    }
+
+    .footer {
+        &__nav {
+            padding-top: 30px;
+            margin: 0 auto;
+        }
+        &__list {
+            display: flex;
+            column-gap: 30px;
+            justify-content: center;
+
+        }
+        .menu__item {
+            margin-right: 0;
+        }
+        &__item-link {
+            font-size: 12px;
+            line-height: 16.39px;
+        }
+        &__text {
+            padding-top: 41px;
+            padding-bottom: 26px;
+            font-size: 13px;
+            line-height: 17.76px;
+        }
     }
 }
