@@ -153,7 +153,7 @@ div {
 .main-block__box {
   position: relative;
   height: 500px;
-  background-image: url("../img/main-block/main-pict2.png");
+  background-image: url("../img/main-block/main-pict.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -265,7 +265,7 @@ div {
   color: #fff;
   background-color: #AD1818;
 }
-.services .service:nth-child(3) .service__img, .services .service:nth-child(4) .service__img {
+.services .add-prop-service .service__img {
   margin-bottom: 17px;
 }
 .services__container .services__button {
@@ -433,6 +433,7 @@ div {
   }
   .main-block__box {
     height: 400px;
+    background-image: url("../img/main-block/main-pict2.png");
   }
   .main-block__img-text {
     bottom: 30px;
@@ -470,10 +471,10 @@ div {
     font-size: 20px;
     line-height: 27.32px;
   }
-  .services .service:nth-child(3) .service__img, .services .service:nth-child(4) .service__img {
+  .services .add-prop-service .service__img {
     margin-bottom: 14px;
   }
-  .services .service:nth-child(3) .service__title, .services .service:nth-child(4) .service__title {
+  .services .add-prop-service .service__title {
     font-size: 30px;
     line-height: 40.98px;
   }
@@ -657,14 +658,14 @@ div {
     font-size: 14px;
     line-height: 19.12px;
   }
-  .services .service:nth-child(3) .service__img, .services .service:nth-child(4) .service__img {
+  .services .add-prop-service .service__img {
     margin-bottom: 11px;
   }
-  .services .service:nth-child(3) .service__title, .services .service:nth-child(4) .service__title {
+  .services .add-prop-service .service__title {
     font-size: 18px;
     line-height: 24.59px;
   }
-  .services .service:nth-child(3) .service__price, .services .service:nth-child(4) .service__price {
+  .services .add-prop-service .service__price {
     padding: 6px 25px;
   }
   .reviews__list {
