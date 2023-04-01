@@ -148,7 +148,6 @@ div {
         font-size: 20px;
         max-width: 430px;
         height: 81px;
-        background-color: rgba(0, 0, 0, .1);
     }
 }
 
@@ -166,23 +165,21 @@ div {
         line-height: 61.47px;
         margin-bottom: 21px;
         margin-left: 3px;
+        margin-bottom: 48px;
     }
 
     &__button {
-        padding-top: 28px;
+        padding: 20px 40px;
+        font-size: 20px;
+        background-color: $red-color;
+        color: #fff !important;
+        border-radius: 5px;
+        transition: all .5s;
 
-        &-link {
-            font-size: 20px;
-            background-color: $red-color;
-            color: #fff !important;
-            padding: 20px 40px;
-            border-radius: 5px;
-            transition: all .5s;
-
-            &:hover {
-                background-color: #ac733fb5;
-                box-shadow: 2px 2px 5px gray;
-            }
+        &:hover {
+            background-color: white;
+            color: $red-color !important;
+            border: 1px solid $red-color;
         }
     }
 }
@@ -218,9 +215,11 @@ div {
             object-position: 50% 70%;
             margin-bottom: 15px;
         }
+
         &__title {
             margin-bottom: 15px;
         }
+
         &__details {
             vertical-align: top;
             font-size: 20px;
@@ -447,9 +446,9 @@ div {
 // MEDIA QUERY
 @media (max-width: 1150px) {
     ._container {
-        width: 100%;
         padding: 0 16px;
     }
+    
 
 }
 
@@ -458,12 +457,17 @@ div {
         &>*:not(:last-child) {
             padding-bottom: 120px;
         }
+        &__projects {
+            padding-bottom: 103px !important;
+        }
         &__reviews {
             padding: 120px 0 120px 0;
         }
+
         &__projects-gallery {
             height: 536px;
         }
+
         &__contacts {
             padding: 120px 0 80px;
         }
@@ -473,16 +477,23 @@ div {
         font-size: 25px;
         line-height: 34.15px;
     }
+
     .header {
         &__menu {
             display: none;
         }
     }
+
     .main-block {
         &__title {
             font-size: 50px;
             max-width: 802px;
         }
+
+        &__box {
+            height: 400px;
+        }
+
         &__img-text {
             bottom: 30px;
         }
@@ -497,23 +508,26 @@ div {
     }
 
     .projects {
-        padding-bottom: 103px !important;
         &__list {
             row-gap: 80px;
         }
+
         &__button {
             margin-top: 102px;
         }
+
         .project {
             &__img {
-                margin-bottom: 10px ;
+                margin-bottom: 10px;
             }
         }
     }
+
     .services {
         &__list {
             margin-bottom: 80px;
         }
+
         .service {
             &__img {
                 height: 315px;
@@ -521,35 +535,42 @@ div {
             }
         }
     }
+
     .reviews {
         &__list {
             column-gap: 10px;
         }
+
         .review {
             &__title {
                 font-size: 35px;
                 line-height: 47.81px;
                 margin-bottom: 25px;
             }
+
             &__text {
                 font-size: 20px;
                 line-height: 27.32px;
             }
+
             &:nth-child(3) {
                 margin-right: 250px;
             }
         }
     }
+
     .gallery {
         &__container {
             height: 536px;
         }
+
         &__title {
             top: 80px;
             left: 50px;
             font-size: 20px;
             line-height: 27.32px;
         }
+
         &__subtitle {
             bottom: 80px;
             left: 50px;
@@ -558,43 +579,70 @@ div {
             width: 375px;
         }
     }
+
     .contacts {
         &__tel {
             font-size: 45px;
             margin-right: 118px;
         }
+
         &__mail {
             font-size: 45px;
         }
     }
 }
+
 @media (max-width: 810px) {
     .main-block__title {
         max-width: 100%;
     }
 }
+
 @media (max-width: 576px) {
     ._container {
         padding: 0 13px;
     }
+
     .page {
         padding-top: 51px;
         &>*:not(:last-child) {
             padding-bottom: 80px;
         }
+        &__projects {
+            padding-bottom: 144px !important;
+        }
+        &__services {
+            padding: 80px 0;
+        }
     }
+
+    //COMMON STYLES 
     .title {
         font-size: 14px;
         margin-bottom: 20px;
     }
+    .subtitle {
+        font-size: 18px;
+        line-height: 24.59px;
+    }
+    .button {
+        font-size: 22px;
+        line-height: 30.05px;
+        padding-top: 36.21px;
+        padding-bottom: 37.93px;
+    }
+
+
     .header {
         &__logo {
             width: 96px;
         }
+
         &__menu {
             display: none;
         }
     }
+
     .main-block {
         &__title {
             margin-bottom: 25px;
@@ -602,9 +650,11 @@ div {
             font-size: 30px;
             line-height: 31.62px;
         }
+
         &__box {
             height: 304px;
         }
+
         &__img-text {
             left: 15px;
             bottom: 15px;
@@ -612,5 +662,43 @@ div {
             font-size: 16px;
             line-height: 21.86px;
         }
+    }
+
+    .about-us {
+        &__text {
+            max-width: 98%;
+            font-size: 22px;
+            line-height: 30.05px;
+        }
+        &__button {
+            padding: 14.5px 27px;
+            font-size: 16px;
+        }
+    }
+
+    .projects {
+        &__list {
+            row-gap: 49px;
+        }
+        .project {
+            &__img {
+                height: 250px;
+                margin-bottom: 20px;
+            }
+            &__title {
+                margin-bottom: 11px;
+            }
+            &__details {
+                font-size: 16px;
+                line-height: 21.86px;
+            }
+        }
+        &__button {
+            margin-top: 60px;
+        }
+    }
+
+    .services {
+
     }
 }

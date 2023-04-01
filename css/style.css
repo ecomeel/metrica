@@ -177,7 +177,6 @@ div {
   font-size: 20px;
   max-width: 430px;
   height: 81px;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .about-us {
@@ -192,21 +191,20 @@ div {
   line-height: 61.47px;
   margin-bottom: 21px;
   margin-left: 3px;
+  margin-bottom: 48px;
 }
 .about-us__button {
-  padding-top: 28px;
-}
-.about-us__button-link {
+  padding: 20px 40px;
   font-size: 20px;
   background-color: #AD1818;
   color: #fff !important;
-  padding: 20px 40px;
   border-radius: 5px;
   transition: all 0.5s;
 }
-.about-us__button-link:hover {
-  background-color: rgba(172, 115, 63, 0.7098039216);
-  box-shadow: 2px 2px 5px gray;
+.about-us__button:hover {
+  background-color: white;
+  color: #AD1818 !important;
+  border: 1px solid #AD1818;
 }
 
 .projects {
@@ -410,13 +408,15 @@ div {
 
 @media (max-width: 1150px) {
   ._container {
-    width: 100%;
     padding: 0 16px;
   }
 }
 @media (max-width: 960px) {
   .page > *:not(:last-child) {
     padding-bottom: 120px;
+  }
+  .page__projects {
+    padding-bottom: 103px !important;
   }
   .page__reviews {
     padding: 120px 0 120px 0;
@@ -438,6 +438,9 @@ div {
     font-size: 50px;
     max-width: 802px;
   }
+  .main-block__box {
+    height: 400px;
+  }
   .main-block__img-text {
     bottom: 30px;
   }
@@ -445,9 +448,6 @@ div {
     max-width: 690px;
     font-size: 35px;
     line-height: 47.81px;
-  }
-  .projects {
-    padding-bottom: 103px !important;
   }
   .projects__list {
     row-gap: 80px;
@@ -519,9 +519,25 @@ div {
   .page > *:not(:last-child) {
     padding-bottom: 80px;
   }
+  .page__projects {
+    padding-bottom: 144px !important;
+  }
+  .page__services {
+    padding: 80px 0;
+  }
   .title {
     font-size: 14px;
     margin-bottom: 20px;
+  }
+  .subtitle {
+    font-size: 18px;
+    line-height: 24.59px;
+  }
+  .button {
+    font-size: 22px;
+    line-height: 30.05px;
+    padding-top: 36.21px;
+    padding-bottom: 37.93px;
   }
   .header__logo {
     width: 96px;
@@ -544,5 +560,31 @@ div {
     max-width: 312px;
     font-size: 16px;
     line-height: 21.86px;
+  }
+  .about-us__text {
+    max-width: 98%;
+    font-size: 22px;
+    line-height: 30.05px;
+  }
+  .about-us__button {
+    padding: 14.5px 27px;
+    font-size: 16px;
+  }
+  .projects__list {
+    row-gap: 49px;
+  }
+  .projects .project__img {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .projects .project__title {
+    margin-bottom: 11px;
+  }
+  .projects .project__details {
+    font-size: 16px;
+    line-height: 21.86px;
+  }
+  .projects__button {
+    margin-top: 60px;
   }
 }/*# sourceMappingURL=style.css.map */
