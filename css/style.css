@@ -137,7 +137,7 @@ div {
 .header .menu__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  column-gap: 60px;
 }
 .header .menu__link:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -345,6 +345,7 @@ div {
 }
 .contacts__communication {
   display: flex;
+  flex-wrap: wrap;
 }
 .contacts__tel {
   position: relative;
@@ -369,7 +370,7 @@ div {
 
 .footer__nav {
   padding-top: 57px;
-  width: 460px;
+  max-width: 460px;
   margin: 0 auto;
 }
 .footer__item_about {
@@ -425,9 +426,6 @@ div {
   }
   .title {
     margin-bottom: 30px;
-  }
-  .header__menu {
-    display: none;
   }
   .main-block__title {
     font-size: 50px;
@@ -520,7 +518,7 @@ div {
     left: 50px;
     font-size: 25px;
     line-height: 34.15px;
-    width: 375px;
+    max-width: 375px;
   }
   .contacts__title {
     margin-bottom: 73px;
@@ -539,19 +537,22 @@ div {
   .main-block__title {
     max-width: 100%;
   }
+  .header .menu__list {
+    column-gap: 30px;
+  }
 }
 @media (max-width: 576px) {
   ._container {
     padding: 0 13px;
   }
   .page {
-    padding-top: 51px;
+    padding-top: 44px;
   }
   .page > *:not(:last-child) {
-    padding-bottom: 80px;
+    padding-bottom: 71px;
   }
   .page__projects {
-    padding-bottom: 144px !important;
+    padding-bottom: 142px !important;
   }
   .page__services {
     padding: 80px 0;
@@ -559,15 +560,13 @@ div {
   .page__reviews {
     padding-top: 80px;
   }
-  .page__projects-gallery {
-    height: 408px;
-  }
   .page__contacts {
     padding-top: 80px;
+    padding-bottom: 71px;
   }
   .title {
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   .subtitle {
     font-size: 18px;
@@ -577,31 +576,42 @@ div {
     font-size: 22px;
     line-height: 30.05px;
     padding-top: 36.21px;
-    padding-bottom: 37.93px;
+    padding-bottom: 29.93px;
+  }
+  .header {
+    margin-top: 21px;
   }
   .header__logo {
     width: 96px;
+    margin-right: 15px;
   }
-  .header__menu {
-    display: none;
+  .header .menu__list {
+    flex-wrap: nowrap;
+    column-gap: 10px;
+  }
+  .header .menu__link {
+    font-size: 13px;
+    line-height: 10px;
   }
   .main-block__title {
-    margin-bottom: 25px;
+    margin-bottom: 11px;
     width: 100%;
     font-size: 30px;
     line-height: 31.62px;
   }
   .main-block__box {
-    height: 304px;
+    height: 324px;
   }
   .main-block__img-text {
     left: 15px;
-    bottom: 15px;
+    bottom: 27px;
     max-width: 312px;
     font-size: 16px;
     line-height: 21.86px;
   }
   .about-us__text {
+    margin-left: -2px;
+    margin-bottom: 41px;
     max-width: 98%;
     font-size: 22px;
     line-height: 30.05px;
@@ -611,7 +621,7 @@ div {
     font-size: 16px;
   }
   .projects__list {
-    row-gap: 49px;
+    row-gap: 47px;
   }
   .projects .project__img {
     height: 250px;
@@ -627,24 +637,38 @@ div {
   .projects__button {
     margin-top: 60px;
   }
+  .services {
+    padding-bottom: 80px !important;
+  }
   .services__list {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     flex-direction: column;
-    row-gap: 60px;
+    row-gap: 56px;
   }
   .services .service__img {
     height: 240px;
     margin-bottom: 10px;
   }
   .services .service__price {
+    padding: 5px 23px 6px 24px;
     top: 23px;
     left: 24px;
     font-size: 14px;
     line-height: 19.12px;
   }
+  .services .service:nth-child(3) .service__img, .services .service:nth-child(4) .service__img {
+    margin-bottom: 11px;
+  }
+  .services .service:nth-child(3) .service__title, .services .service:nth-child(4) .service__title {
+    font-size: 18px;
+    line-height: 24.59px;
+  }
+  .services .service:nth-child(3) .service__price, .services .service:nth-child(4) .service__price {
+    padding: 6px 25px;
+  }
   .reviews__list {
     flex-direction: column;
-    row-gap: 80px;
+    row-gap: 75px;
   }
   .reviews .review:not(:last-child) {
     margin-bottom: 0px;
@@ -661,7 +685,11 @@ div {
   .reviews .review:nth-child(3) {
     margin-right: 0;
   }
+  .gallery {
+    height: 408px;
+  }
   .gallery__container {
+    margin-top: 10px;
     height: 408px;
   }
   .gallery__title {
@@ -672,6 +700,7 @@ div {
   }
   .gallery__subtitle {
     bottom: 60px;
+    max-width: 285px;
     left: 13px;
     font-size: 19px;
     line-height: 25.97px;
@@ -685,10 +714,10 @@ div {
   .contacts__tel, .contacts__mail {
     font-size: 35px;
     line-height: 45.62px;
-    margin-top: 58px;
+    margin-top: 53px;
   }
   .contacts__tel::before, .contacts__mail::before {
-    top: -32px;
+    top: -35px;
   }
   .contacts__tel {
     margin-right: 0;
@@ -707,7 +736,7 @@ div {
     height: 12px;
   }
   .footer__nav {
-    padding-top: 30px;
+    padding-top: 23px;
     margin: 0 auto;
   }
   .footer__list {
@@ -723,9 +752,19 @@ div {
     line-height: 16.39px;
   }
   .footer__text {
-    padding-top: 41px;
+    padding-top: 38px;
+    margin-left: -7px;
     padding-bottom: 26px;
     font-size: 13px;
     line-height: 17.76px;
+  }
+}
+@media (max-width: 375px) {
+  .main-block__title {
+    max-width: 337px;
+  }
+  .review__text {
+    max-width: 350px;
+    margin-left: 3px;
   }
 }/*# sourceMappingURL=style.css.map */
