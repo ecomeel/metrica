@@ -312,7 +312,7 @@ div {
 }
 
 .gallery {
-  background-image: url("../img/gallery/project.jpg");
+  background-image: url("../img/gallery/1-1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -502,6 +502,7 @@ div {
   }
   .gallery {
     height: 536px;
+    background-image: url("../img/gallery/1-2.png");
   }
   .gallery__container {
     height: 536px;
@@ -766,5 +767,8 @@ div {
   .review__text {
     max-width: 350px;
     margin-left: 3px;
+  }
+  .gallery {
+    background-image: url("../img/gallery/1-3.png");
   }
 }/*# sourceMappingURL=style.css.map */
