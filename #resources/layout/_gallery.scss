@@ -1,0 +1,30 @@
+.gallery {
+    background-image: url("../img/gallery/1-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 717px;
+
+    &__container {
+        margin-top: 10px;
+        position: relative;
+        height: 717px;
+    }
+
+    &__title {
+        position: absolute;
+        top: 60px;
+        color: #fff;
+        font-size: 22px;
+        line-height: 30.05px;
+    }
+
+    &__subtitle {
+        position: absolute;
+        bottom: 60px;
+        font-size: 30px;
+        line-height: 40.98px;
+        width: 443px;
+        color: white;
+    }
+}

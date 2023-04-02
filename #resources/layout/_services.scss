@@ -1,0 +1,61 @@
+.services {
+    &__title {
+        color: #fff;
+        margin-bottom: 8px;
+        margin-left: 2px;
+        margin-bottom: 32px;
+    }
+
+    &__list {
+        margin-bottom: 108px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 11px;
+        row-gap: 45px;
+
+    }
+
+    .service {
+        position: relative;
+        flex: 1 0 49%;
+
+        &__img {
+            height: 389px;
+            margin-bottom: 25px;
+        }
+
+        &__title {
+            max-width: 250px;
+            color: #fff;
+            margin-left: 3px;
+        }
+
+        &__price {
+            padding: 5px 20px;
+            position: absolute;
+            top: 32px;
+            left: 30px;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 22px;
+            line-height: 30.05px;
+            color: #fff;
+            background-color: $red-color;
+        }
+    }
+    .add-prop-service {
+        .service__img {
+            margin-bottom: 17px;
+        }
+    }
+    &__container &__button {
+        color: #fff;
+        background-color: $red-color;
+
+        &:hover {
+            color: $red-color;
+            background-color: #fff;
+            border: 1px solid $red-color;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.contacts {
+    &__title {
+        font-style: normal;
+        margin-bottom: 74px;
+    }
+
+    &__communication {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__tel {
+        @extend %contact;
+        position: relative;
+        letter-spacing: -0.02em;
+        margin-right: 108px;
+
+        &::before {
+            background-image: url('../img/contacts/tel-icon.png');
+            @extend %contact-icon;
+            top: -48px;
+            width: 12px;
+        }
+    }
+
+    &__mail {
+        @extend %contact;
+        position: relative;
+        margin-top: -12px;
+        color: rgba(0, 0, 0, .5);
+        border-bottom: 1px solid rgba(0, 0, 0, .5);
+
+        &::before {
+            background-image: url('../img/contacts/mail-icon.png');
+            width: 22px;
+            @extend %contact-icon;
+        }
+    }
+}

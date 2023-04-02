@@ -1,0 +1,29 @@
+.main-block {
+    &__title {
+        font-size: 60px;
+        text-transform: none;
+        width: 956px;
+        line-height: 60px;
+        text-align: left;
+    }
+
+    &__box {
+        position: relative;
+        height: 500px;
+        background-image: url('../img/main-block/main-pict.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    &__img-text {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        color: #fff;
+        line-height: 27.32px;
+        font-size: 20px;
+        max-width: 430px;
+        height: 81px;
+    }
+}

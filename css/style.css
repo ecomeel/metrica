@@ -186,7 +186,7 @@ div {
   transition: all 0.5s;
 }
 .about-us__button:hover {
-  background-color: white;
+  background-color: #fff;
   color: #AD1818 !important;
   border: 1px solid #AD1818;
 }
@@ -209,7 +209,7 @@ div {
 }
 .projects__button:hover {
   background-color: #AD1818;
-  color: #fff;
+  color: #fff !important;
 }
 .projects .project__img {
   height: 450px;

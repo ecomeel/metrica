@@ -1,0 +1,46 @@
+.projects {
+    margin-top: 25px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 90px;
+    }
+
+    &__title {
+        margin-bottom: 28px;
+    }
+
+    &__button {
+        margin-top: 90px;
+        color: $red-color !important;
+        border: 1px solid $red-color;
+
+        &:hover {
+            background-color: $red-color;
+            color: #fff !important;
+        }
+    }
+
+    .project {
+        &__img {
+            height: 450px;
+            object-fit: cover;
+            object-position: 50% 70%;
+            margin-bottom: 15px;
+        }
+
+        &__title {
+            margin-bottom: 15px;
+        }
+
+        &__details {
+            vertical-align: top;
+            font-size: 20px;
+            line-height: 27.32px;
+            color: $red-color;
+        }
+
+    }
+
+}

@@ -1,0 +1,40 @@
+.footer {
+    &__nav {
+        padding-top: 57px;
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+    &__item_about {
+        margin-right: 50px;
+    }
+
+    &__item_projects {
+        margin-right: 54px;
+    }
+
+    &__item_services {
+        margin-right: 52px;
+    }
+
+    &__list &__item-link {
+        color: white;
+        line-height: 24.59px;
+        transition: color .5s;
+
+        &:hover {
+            color: rgba(255, 255, 255, .5)
+        }
+    }
+
+    &__text {
+        padding: 91px 0 36px 5px;
+        font-size: 20px;
+        color: rgba(255, 255, 255, .5);
+        text-align: center;
+    }
+
+    .menu__item {
+        display: inline-block;
+    }
+}

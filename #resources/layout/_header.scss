@@ -1,0 +1,23 @@
+
+.header {
+    margin-top: 24px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 43px;
+    }
+
+    .menu {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 60px;
+        }
+
+        &__link:hover {
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+        }
+    }
+}

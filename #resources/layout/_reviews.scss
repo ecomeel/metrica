@@ -1,0 +1,42 @@
+.reviews {
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 83px;
+    }
+
+    .review {
+        margin-left: -2px;
+        flex: 1 0 46%;
+
+
+        &__title {
+            margin-bottom: 14px;
+            font-size: 45px;
+            line-height: 60.5px;
+        }
+
+        &__text {
+            text-align: left;
+            font-size: 22px;
+            line-height: 30.3px;
+        }
+
+        &:nth-child(1) {
+            max-width: 528px;
+            margin-right: 54px;
+        }
+
+        &:nth-child(2) {
+            max-width: 505px;
+        }
+
+        &:nth-child(3) {
+            margin-right: 290px;
+        }
+    }
+}
