@@ -8,10 +8,13 @@
         flex-wrap: wrap;
         row-gap: 83px;
     }
-
+    
     .review {
+        &:last-child {
+            margin-right: 290px;
+        }
         margin-left: -2px;
-        flex: 1 0 46%;
+        flex: 1 0 50%;
 
 
         &__title {
@@ -26,17 +29,17 @@
             line-height: 30.3px;
         }
 
-        &:nth-child(1) {
-            max-width: 528px;
-            margin-right: 54px;
-        }
+        // &:nth-child(1) {
+        //     max-width: 528px;
+        //     margin-right: 54px;
+        // }
 
-        &:nth-child(2) {
-            max-width: 505px;
-        }
+        // &:nth-child(2) {
+        //     max-width: 505px;
+        // }
 
-        &:nth-child(3) {
-            margin-right: 290px;
-        }
+        // &:nth-child(3) {
+        //     margin-right: 290px;
+        // }
     }
 }
