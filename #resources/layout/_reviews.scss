@@ -6,6 +6,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
+        column-gap: 13px;
         row-gap: 113px;
     }
     
@@ -14,7 +15,7 @@
             margin-right: 290px;
         }
         margin-left: -2px;
-        flex: 1 0 50%;
+        flex: 1 0 46%;
 
 
         &__title {

@@ -2,10 +2,7 @@
     margin-top: 9px;
     position: relative;
     &__title-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+        @extend %absolute-position;
         z-index: 10;
     }
     &__title {
@@ -18,25 +15,18 @@
 
     &__slides {
         height: 717px;
-
     }
     &__slide {
-        position: absolute;
-        top: 0;
-        left: 0;
+        @extend %absolute-position;
         opacity: 0;
         height: 717px;
-        width: 100%;
 
         &_active {
             opacity: 1;
         }
     }
     &__pict {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
+        @extend %absolute-position;
         height: 717px;
         object-fit: cover;
         object-position: 50%;
