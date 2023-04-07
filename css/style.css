@@ -352,6 +352,7 @@ div {
 .gallery__subtitle {
   position: absolute;
   top: 575px;
+  z-index: 10;
   font-size: 30px;
   line-height: 40.98px;
   width: 443px;
@@ -520,23 +521,15 @@ div {
     font-size: 20px;
     line-height: 27.3px;
   }
-  .reviews .review:nth-child(1) {
-    max-width: 459px;
-    margin-right: 4px;
-  }
-  .reviews .review:nth-child(2) {
-    max-width: 460px;
-  }
-  .reviews .review:nth-child(3) {
+  .reviews .review:last-of-type {
     margin-right: 250px;
   }
   .gallery {
+    margin-top: -2px;
     height: 536px;
-    background-image: url("../img/gallery/1-2.png");
   }
-  .gallery__container {
+  .gallery__slides, .gallery__pict {
     height: 536px;
-    margin-top: 0;
   }
   .gallery__title {
     top: 80px;
@@ -545,11 +538,19 @@ div {
     line-height: 27.32px;
   }
   .gallery__subtitle {
+    top: 388px;
     bottom: 80px;
     left: 50px;
     font-size: 25px;
     line-height: 34.15px;
     max-width: 375px;
+  }
+  .gallery__controls {
+    top: 344px;
+    left: 52px;
+  }
+  .gallery__control-prev {
+    margin-right: 13px;
   }
   .contacts {
     padding: 120px 0 80px;
@@ -583,19 +584,6 @@ div {
     padding-top: 44px;
   }
   .page > *:not(:last-child) {
-    padding-bottom: 71px;
-  }
-  .page__projects {
-    padding-bottom: 142px !important;
-  }
-  .page__services {
-    padding: 80px 0;
-  }
-  .page__reviews {
-    padding-top: 80px;
-  }
-  .page__contacts {
-    padding-top: 80px;
     padding-bottom: 71px;
   }
   .title {
@@ -654,6 +642,9 @@ div {
     padding: 14.5px 27px;
     font-size: 16px;
   }
+  .projects {
+    padding-bottom: 142px !important;
+  }
   .projects__list {
     row-gap: 47px;
   }
@@ -672,7 +663,7 @@ div {
     margin-top: 60px;
   }
   .services {
-    padding-bottom: 80px !important;
+    padding: 80px 0 85px 0 !important;
   }
   .services__list {
     margin-bottom: 57px;
@@ -700,6 +691,9 @@ div {
   .services .add-prop-service .service__price {
     padding: 6px 25px;
   }
+  .reviews {
+    padding-top: 76px;
+  }
   .reviews__list {
     flex-direction: column;
     row-gap: 75px;
@@ -721,9 +715,9 @@ div {
   }
   .gallery {
     height: 408px;
-  }
-  .gallery__container {
     margin-top: 10px;
+  }
+  .gallery__slides, .gallery__pict, .gallery__slide {
     height: 408px;
   }
   .gallery__title {
@@ -733,11 +727,35 @@ div {
     line-height: 19.12px;
   }
   .gallery__subtitle {
-    bottom: 60px;
+    top: 295px;
     max-width: 285px;
     left: 13px;
     font-size: 19px;
     line-height: 25.97px;
+  }
+  .gallery__container {
+    width: 100%;
+    height: 30px;
+  }
+  .gallery__controls {
+    width: 96%;
+    top: 46%;
+    left: 18px;
+    justify-content: space-between;
+  }
+  .gallery__control-prev {
+    display: block;
+    margin-right: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .gallery__control-next {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  .contacts {
+    padding: 80px 0 70px 0;
   }
   .contacts__title {
     margin-bottom: 0;
@@ -800,8 +818,5 @@ div {
   .review__text {
     max-width: 350px;
     margin-left: 3px;
-  }
-  .gallery {
-    background-image: url("../img/gallery/1-3.png");
   }
 }/*# sourceMappingURL=style.css.map */

@@ -168,15 +168,20 @@
                 </div>
             </div>
             <div class="gallery__slides">
-                <div class="gallery__slide">
-                    <img src="img/gallery/1-1.png" alt="" class="gallery__pict">
+                <div class="gallery__slide gallery__slide_active">
+                    <picture>
+                        <source srcset="img/gallery/1-3.png" media="(max-width: 375px)">
+                        <source srcset="img/gallery/1-2.png" media="(max-width: 960px)">
+                        <img src="img/gallery/1-1.png" alt="" class="gallery__pict">
+                    </picture>
+                    
                     <div class="gallery__slide-wrapper">
                         <div class="_container">
                             <h3 class="gallery__subtitle">Проект  Двухкомнтаной квартиры в ЖК Лесной Пейзаж</h3>
                         </div>
                     </div>
                 </div>
-                <div class="gallery__slide gallery__slide_active">
+                <div class="gallery__slide">
                     <img src="img/gallery/2.png" alt="" class="gallery__pict">
                     <div class="gallery__slide-wrapper">
                         <div class="_container">
