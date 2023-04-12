@@ -410,6 +410,38 @@ div {
         padding: 6px 25px;
       }
     }
+
+    .popup {
+        &__content {
+            padding: 80px 16px;
+        }
+        &__close-btn {
+            width: 30px;
+            height: 30px;
+            top: 40px;
+            right: 29px;
+        }
+        &__title {
+            margin-bottom: 11px;
+            font-size: 25px;
+            line-height: 34.15px;
+        }
+        &__desc {
+            max-width: 209px;
+            margin: 0 auto;
+            margin-bottom: 70px;
+            font-size: 14px;
+            line-height: 19.12px;
+        }
+        &__input {
+            margin-bottom: 40px;
+            font-size: 18px;
+            line-height: 24.59px;
+            &:last-of-type {
+                margin-bottom: 60px;
+            }
+        }
+    }
   }
 
   .reviews {
