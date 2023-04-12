@@ -1,63 +1,62 @@
 .gallery {
-    margin-top: 9px;
-    position: relative;
-    &__title-wrapper {
-        @extend %absolute-position;
-        z-index: 10;
-    }
-    &__title {
-        position: absolute;
-        top: 60px;
-        color: #fff;
-        font-size: 22px;
-        line-height: 30.05px;
-    }
+  margin-top: 9px;
+  position: relative;
+  &__title-wrapper {
+    @extend %absolute-position;
+    z-index: 10;
+  }
+  &__title {
+    position: absolute;
+    top: 60px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 30.05px;
+  }
 
-    &__slides {
-        height: 717px;
-    }
-    &__slide {
-        @extend %absolute-position;
-        opacity: 0;
-        height: 717px;
+  &__slides {
+    height: 717px;
+  }
+  &__slide {
+    @extend %absolute-position;
+    opacity: 0;
+    height: 717px;
 
-        &_active {
-            opacity: 1;
-        }
+    &_active {
+      opacity: 1;
     }
-    &__pict {
-        @extend %absolute-position;
-        height: 717px;
-        object-fit: cover;
-        object-position: 50%;
-    }
-    &__slide-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-    &__subtitle {
-        position: absolute;
-        top: 575px;
-        z-index: 10;
-        font-size: 30px;
-        line-height: 40.98px;
-        width: 443px;
-        color: white;
-    }
-    &__controls {
-        position: absolute;
-        top: 515px;
-        margin-left: -10px;
-        display: flex;
-    }
-    &__control-prev {
-        cursor: pointer;
-        margin-right: 14px;
-    }
-    &__control-next {
-        cursor: pointer;
-
-    }
+  }
+  &__pict {
+    @extend %absolute-position;
+    height: 717px;
+    object-fit: cover;
+    object-position: 50%;
+  }
+  &__slide-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  &__subtitle {
+    position: absolute;
+    top: 575px;
+    z-index: 10;
+    font-size: 30px;
+    line-height: 40.98px;
+    width: 443px;
+    color: white;
+  }
+  &__controls {
+    position: absolute;
+    top: 515px;
+    margin-left: -10px;
+    display: flex;
+  }
+  &__control-prev {
+    cursor: pointer;
+    margin-right: 14px;
+  }
+  &__control-next {
+    cursor: pointer;
+  }
 }

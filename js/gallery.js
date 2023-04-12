@@ -12,7 +12,6 @@ function init() {
     activeId = 0;
     
     prevButtonNode.addEventListener('click', () => {
-        console.log('hello');
         setActiveSlideById(getPrevId());
     });
     
