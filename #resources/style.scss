@@ -15,7 +15,7 @@ body {
   scroll-behavior: smooth;
 }
 .body_fixed {
-    overflow: hidden;
+  overflow: hidden;
 }
 img {
   width: 100%;
@@ -85,6 +85,34 @@ div {
 
   .title {
     margin-bottom: 30px;
+  }
+  .header__container {
+    position: relative;
+  }
+  .menu {
+    display: none;
+  }
+
+  .burger-btn {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 14;
+    background-image: url('../img/header/burger-btn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 50px;
+    height: 7px;
+    cursor: pointer;
+    &_open {
+      background-image: url('../img/header/close-btn.png');
+      width: 21px;
+      height: 21px;
+      top: -5px;
+      right: 27px;
+    }
   }
 
   .main-block {
@@ -412,35 +440,35 @@ div {
     }
 
     .popup {
-        &__content {
-            padding: 80px 16px;
+      &__content {
+        padding: 80px 16px;
+      }
+      &__close-btn {
+        width: 30px;
+        height: 30px;
+        top: 40px;
+        right: 29px;
+      }
+      &__title {
+        margin-bottom: 11px;
+        font-size: 25px;
+        line-height: 34.15px;
+      }
+      &__desc {
+        max-width: 209px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        font-size: 14px;
+        line-height: 19.12px;
+      }
+      &__input {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 24.59px;
+        &:last-of-type {
+          margin-bottom: 60px;
         }
-        &__close-btn {
-            width: 30px;
-            height: 30px;
-            top: 40px;
-            right: 29px;
-        }
-        &__title {
-            margin-bottom: 11px;
-            font-size: 25px;
-            line-height: 34.15px;
-        }
-        &__desc {
-            max-width: 209px;
-            margin: 0 auto;
-            margin-bottom: 70px;
-            font-size: 14px;
-            line-height: 19.12px;
-        }
-        &__input {
-            margin-bottom: 40px;
-            font-size: 18px;
-            line-height: 24.59px;
-            &:last-of-type {
-                margin-bottom: 60px;
-            }
-        }
+      }
     }
   }
 
