@@ -1,61 +1,108 @@
 .services {
+  &__title {
+    color: #fff;
+    margin-bottom: 8px;
+    margin-left: 2px;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    margin-bottom: 108px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 11px;
+    row-gap: 45px;
+  }
+
+  .service {
+    position: relative;
+    flex: 1 0 49%;
+
+    &__img {
+      height: 389px;
+      margin-bottom: 25px;
+    }
+
     &__title {
-        color: #fff;
-        margin-bottom: 8px;
-        margin-left: 2px;
-        margin-bottom: 32px;
+      max-width: 250px;
+      color: #fff;
+      margin-left: 3px;
     }
 
-    &__list {
-        margin-bottom: 108px;
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 11px;
-        row-gap: 45px;
-
+    &__price {
+      padding: 5px 20px;
+      position: absolute;
+      top: 32px;
+      left: 30px;
+      display: inline-block;
+      border-radius: 5px;
+      font-size: 22px;
+      line-height: 30.05px;
+      color: #fff;
+      background-color: $red-color;
     }
-
-    .service {
-        position: relative;
-        flex: 1 0 49%;
-
-        &__img {
-            height: 389px;
-            margin-bottom: 25px;
-        }
-
-        &__title {
-            max-width: 250px;
-            color: #fff;
-            margin-left: 3px;
-        }
-
-        &__price {
-            padding: 5px 20px;
-            position: absolute;
-            top: 32px;
-            left: 30px;
-            display: inline-block;
-            border-radius: 5px;
-            font-size: 22px;
-            line-height: 30.05px;
-            color: #fff;
-            background-color: $red-color;
-        }
+  }
+  .add-prop-service {
+    .service__img {
+      margin-bottom: 17px;
     }
-    .add-prop-service {
-        .service__img {
-            margin-bottom: 17px;
-        }
-    }
-    &__container &__button {
-        color: #fff;
-        background-color: $red-color;
+  }
+  &__container &__button {
+    color: #fff;
+    background-color: $red-color;
 
-        &:hover {
-            color: $red-color;
-            background-color: #fff;
-            border: 1px solid $red-color;
-        }
+    &:hover {
+      color: $red-color;
+      background-color: #fff;
+      border: 1px solid $red-color;
     }
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease;
+  &_open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    padding: 94px 55px 86px 79px;
+    width: 777px;
+    max-height: 100%;
+    overflow-y: scroll;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+  }
+  &__close-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 32px;
+    right: 34px;
+    cursor: pointer;
+    background-image: url('../img/services/close-popup.png');
+  }
+  &__title {
+    margin-bottom: 4px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 61.47px;
+  }
+  &__desc {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
