@@ -731,8 +731,13 @@ div {
   .main-block__title {
     max-width: 100%;
   }
-  .header .menu__list {
-    column-gap: 30px;
+  .contacts__tel, .contacts__mail {
+    font-size: 35px;
+    line-height: 45.62px;
+    margin-top: 53px;
+  }
+  .contacts__tel::before, .contacts__mail::before {
+    top: -35px;
   }
 }
 @media (max-width: 576px) {
@@ -765,14 +770,6 @@ div {
   .header__logo {
     width: 96px;
     margin-right: 15px;
-  }
-  .header .menu__list {
-    flex-wrap: nowrap;
-    column-gap: 10px;
-  }
-  .header .menu__link {
-    font-size: 13px;
-    line-height: 10px;
   }
   .burger-btn {
     width: 40px;
@@ -955,14 +952,6 @@ div {
   }
   .contacts__communication {
     flex-direction: column;
-  }
-  .contacts__tel, .contacts__mail {
-    font-size: 35px;
-    line-height: 45.62px;
-    margin-top: 53px;
-  }
-  .contacts__tel::before, .contacts__mail::before {
-    top: -35px;
   }
   .contacts__tel {
     margin-right: 0;

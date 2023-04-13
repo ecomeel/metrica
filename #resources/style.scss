@@ -274,11 +274,15 @@ div {
   .main-block__title {
     max-width: 100%;
   }
+  .contacts {
+    &__tel,
+    &__mail {
+      font-size: 35px;
+      line-height: 45.62px;
+      margin-top: 53px;
 
-  .header {
-    .menu {
-      &__list {
-        column-gap: 30px;
+      &::before {
+        top: -35px;
       }
     }
   }
@@ -322,19 +326,6 @@ div {
       width: 96px;
       margin-right: 15px;
     }
-
-    .menu {
-      &__list {
-        flex-wrap: nowrap;
-        column-gap: 10px;
-      }
-
-      &__link {
-        font-size: 13px;
-        line-height: 10px;
-      }
-    }
-
   }
   .burger-btn {
     width: 40px;
@@ -561,17 +552,6 @@ div {
 
     &__communication {
       flex-direction: column;
-    }
-
-    &__tel,
-    &__mail {
-      font-size: 35px;
-      line-height: 45.62px;
-      margin-top: 53px;
-
-      &::before {
-        top: -35px;
-      }
     }
 
     &__tel {
