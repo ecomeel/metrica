@@ -38,8 +38,35 @@
             </li>
           </ul>
         </nav>
+        <div class="js-burger-btn burger-btn"></div>
       </div>
     </header>
+    <div class="js-burger burger">
+      <div class="js-burger__content burger__content">
+        <a href="" class="burger__logo-link">
+          <img src="img/header/logo.png" alt="" class="burger__logo" />
+          <nav class="burger__menu">
+            <ul class="burger__menu-list">
+              <li class="burger__menu-item">
+                <a href="#aboutUs" class="burger__menu-link">о нас</a>
+              </li>
+              <li class="burger__menu-item">
+                <a href="#projects" class="burger__menu-link">проекты</a>
+              </li>
+              <li class="burger__menu-item">
+                <a href="#services" class="burger__menu-link">услуги</a>
+              </li>
+              <li class="burger__menu-item">
+                <a href="#contacts" class="burger__menu-link">контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="burger__title">Для связи</p>
+          <a href="tel:+7 935  895-45-35" class="burger__tel">+7 935  895-45-35</a>
+          <a href="mailto:hello@mail.com" class="burger__mail">hello@mail.com</a>
+        </a>
+      </div>
+    </div>
     <main class="page">
       <section class="main-block">
         <div class="main-block__container _container">
@@ -191,12 +218,22 @@
           <div class="popup js-popup">
             <div class="popup__content js-popup__content">
               <p class="popup__title">Заказать услугу</p>
-              <p class="popup__desc">Заполните форму, мы свяжемся с вами в течение суток</p>
-              <input placeholder="Имя" type="text" class="popup__input">
-              <input placeholder="Электронная почта" type="text" class="popup__input">
-              <input placeholder="Номер телефона" type="text" class="popup__input">
+              <p class="popup__desc">
+                Заполните форму, мы свяжемся с вами в течение суток
+              </p>
+              <input placeholder="Имя" type="text" class="popup__input" />
+              <input
+                placeholder="Электронная почта"
+                type="text"
+                class="popup__input"
+              />
+              <input
+                placeholder="Номер телефона"
+                type="text"
+                class="popup__input"
+              />
               <button class="popup__send-btn">Отправить</button>
-              <div class="popup__close-btn js-popup__close-btn "></div>
+              <div class="popup__close-btn js-popup__close-btn"></div>
             </div>
           </div>
         </div>
@@ -354,7 +391,16 @@
       </nav>
       <p class="footer__text">cтудия дизайна интерьера Метрика — 2023</p>
     </footer>
+    <!-- <script src="js/burger.js"></script>
+    <script src="js/popup.js"></script> -->
+    <script src="js/popupBurger.js"></script>
     <script src="js/gallery.js"></script>
-    <script src="js/popup.js"></script>
   </body>
 </html>
+<div class="hello">
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>

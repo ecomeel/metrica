@@ -1,23 +1,70 @@
-
 .header {
-    margin-top: 24px;
+  margin-top: 24px;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        min-height: 43px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 43px;
+  }
+  .menu {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 60px;
     }
-
-    .menu {
-        &__list {
-            display: flex;
-            flex-wrap: wrap;
-            column-gap: 60px;
-        }
-
-        &__link:hover {
-            border-bottom: 1px solid rgba(0, 0, 0, .5);
-        }
+  
+    &__link:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     }
+  }
+}
+
+
+
+.burger-btn {
+  display: none;
+}
+
+.burger {
+  @extend %popup-window;
+  justify-content: end;
+  z-index: 13;
+  background-color: rgba(0, 0, 0, .9);
+  &_open {
+    @extend %popup-window-open;
+  }
+  &__content {
+    padding: 80px 30px;
+    width: 274px;
+    height: 100%;
+    background-color: #fff;
+  }
+  &__logo {
+    width: 156px;
+    margin-bottom: 50px;
+  }
+  &__menu {
+    margin-bottom: 90px;
+  }
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__menu-link {
+    font-size: 25px;
+    line-height: 34.15px;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 21.86px;
+    opacity: .5;
+  }
+  &__tel, &__mail {
+    font-size: 20px;
+    line-height: 40px;
+
+  }
 }
