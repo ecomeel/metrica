@@ -88,9 +88,9 @@ div {
   }
   .header__container {
     position: relative;
-  }
-  .menu {
-    display: none;
+    .menu {
+      display: none;
+    }
   }
 
   .burger-btn {
@@ -334,8 +334,13 @@ div {
         line-height: 10px;
       }
     }
-  }
 
+  }
+  .burger-btn {
+    width: 40px;
+    top: 14px;
+    right: 10px;
+  }
   .main-block {
     &__title {
       margin-bottom: 11px;
@@ -400,7 +405,7 @@ div {
   }
 
   .services {
-    padding: 80px 0 85px 0 !important;
+    padding: 80px 0 82px 0 !important;
     // padding-bottom: 80px !important;
 
     &__list {
