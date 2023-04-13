@@ -7,11 +7,11 @@
   }
 
   &__list {
-    margin-bottom: 108px;
+    margin-bottom: 102px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 11px;
-    row-gap: 45px;
+    row-gap: 80px;
   }
 
   .service {
@@ -24,7 +24,7 @@
     }
 
     &__title {
-      max-width: 250px;
+
       color: #fff;
       margin-left: 3px;
     }
@@ -44,7 +44,7 @@
   }
   .add-prop-service {
     .service__img {
-      margin-bottom: 17px;
+      margin-bottom: 25px;
     }
   }
   &__container &__button {

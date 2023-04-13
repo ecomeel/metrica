@@ -307,11 +307,11 @@ div {
   margin-bottom: 32px;
 }
 .services__list {
-  margin-bottom: 108px;
+  margin-bottom: 102px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 11px;
-  row-gap: 45px;
+  row-gap: 80px;
 }
 .services .service {
   position: relative;
@@ -322,7 +322,6 @@ div {
   margin-bottom: 25px;
 }
 .services .service__title {
-  max-width: 250px;
   color: #fff;
   margin-left: 3px;
 }
@@ -339,7 +338,7 @@ div {
   background-color: #AD1818;
 }
 .services .add-prop-service .service__img {
-  margin-bottom: 17px;
+  margin-bottom: 25px;
 }
 .services__container .services__button {
   color: #fff;
@@ -423,8 +422,8 @@ div {
 .reviews__list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 13px;
-  row-gap: 113px;
+  column-gap: 53px;
+  row-gap: 83px;
 }
 .reviews .review {
   margin-left: -2px;
@@ -432,6 +431,9 @@ div {
 }
 .reviews .review:last-child {
   margin-right: 290px;
+}
+.reviews .review:not(:last-child) {
+  max-width: 530px;
 }
 .reviews .review__title {
   margin-bottom: 14px;
@@ -445,7 +447,7 @@ div {
 }
 
 .gallery {
-  margin-top: 9px;
+  margin-top: 5px;
   position: relative;
 }
 .gallery__title-wrapper {
@@ -639,7 +641,7 @@ div {
   }
   .services__list {
     margin-bottom: 72px;
-    row-gap: 80px;
+    row-gap: 67px;
   }
   .services .service__img {
     height: 315px;
@@ -659,8 +661,8 @@ div {
     margin-bottom: 14px;
   }
   .services .add-prop-service .service__title {
-    font-size: 30px;
-    line-height: 40.98px;
+    font-size: 25px;
+    line-height: 34.15px;
   }
   .reviews {
     padding-top: 120px;
@@ -710,7 +712,7 @@ div {
     margin-right: 13px;
   }
   .contacts {
-    padding: 120px 0 80px;
+    padding: 120px 0 123px;
   }
   .contacts__title {
     margin-bottom: 73px;
@@ -805,7 +807,7 @@ div {
     font-size: 16px;
   }
   .projects {
-    padding-bottom: 142px !important;
+    padding-bottom: 79px !important;
   }
   .projects__list {
     row-gap: 47px;
@@ -828,9 +830,9 @@ div {
     padding: 80px 0 82px 0 !important;
   }
   .services__list {
-    margin-bottom: 57px;
+    margin-bottom: 50px;
     flex-direction: column;
-    row-gap: 56px;
+    row-gap: 48px;
   }
   .services .service__img {
     height: 240px;

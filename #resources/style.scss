@@ -161,7 +161,7 @@ div {
   .services {
     &__list {
       margin-bottom: 72px;
-      row-gap: 80px;
+      row-gap: 67px;
     }
 
     .service {
@@ -189,8 +189,8 @@ div {
       }
 
       .service__title {
-        font-size: 30px;
-        line-height: 40.98px;
+        font-size: 25px;
+        line-height: 34.15px
       }
     }
   }
@@ -252,7 +252,7 @@ div {
   }
 
   .contacts {
-    padding: 120px 0 80px;
+    padding: 120px 0 123px;
     &__title {
       margin-bottom: 73px;
     }
@@ -378,7 +378,7 @@ div {
   }
 
   .projects {
-    padding-bottom: 142px !important;
+    padding-bottom: 79px !important;
     &__list {
       row-gap: 47px;
     }
@@ -409,9 +409,9 @@ div {
     // padding-bottom: 80px !important;
 
     &__list {
-      margin-bottom: 57px;
+      margin-bottom: 50px;
       flex-direction: column;
-      row-gap: 56px;
+      row-gap: 48px;
     }
 
     .service {
