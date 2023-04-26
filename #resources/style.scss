@@ -70,6 +70,14 @@ div {
   }
 }
 
+@media (max-width: 1080px) {
+  .contacts {
+    &__mail, &__tel {
+      font-size: 45px;
+    }
+  }
+}
+
 @media (max-width: 960px) {
   .page {
     & > *:not(:last-child) {
@@ -258,12 +266,10 @@ div {
     }
 
     &__tel {
-      font-size: 45px;
       margin-right: 118px;
     }
 
     &__mail {
-      font-size: 45px;
       margin-bottom: 10px;
       border-bottom: 2px solid rgba(0, 0, 0, 0.5);
     }
