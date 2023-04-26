@@ -206,6 +206,9 @@ div {
   line-height: 34.15px;
   text-transform: uppercase;
 }
+.burger__menu-link:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
 .burger__title {
   font-size: 16px;
   line-height: 21.86px;
@@ -214,6 +217,9 @@ div {
 .burger__tel, .burger__mail {
   font-size: 20px;
   line-height: 40px;
+}
+.burger__tel:hover, .burger__mail:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .main-block__title {
@@ -323,6 +329,7 @@ div {
   color: #AD1818;
   background-color: #fff;
   border-color: #AD1818;
+  cursor: pointer;
 }
 .services .service {
   position: relative;
