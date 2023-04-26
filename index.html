@@ -222,18 +222,22 @@
               <p class="popup__desc">
                 Заполните форму, мы свяжемся с вами в течение суток
               </p>
-              <input placeholder="Имя" type="text" class="popup__input" />
-              <input
-                placeholder="Электронная почта"
-                type="text"
-                class="popup__input"
-              />
-              <input
-                placeholder="Номер телефона"
-                type="text"
-                class="popup__input"
-              />
-              <button class="popup__send-btn">Отправить</button>
+              <form class="popuo__form">
+                <input placeholder="Имя" type="text" name="name" class="popup__input" />
+                <input
+                  placeholder="Электронная почта"
+                  type="email"
+                  name="email"
+                  class="popup__input"
+                />
+                <input
+                  placeholder="Номер телефона"
+                  type="tel"
+                  name="phone"
+                  class="popup__input"
+                />
+                <button class="popup__send-btn">Отправить</button>
+              </form>
               <div class="popup__close-btn js-popup__close-btn"></div>
             </div>
           </div>
