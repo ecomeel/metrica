@@ -313,6 +313,17 @@ div {
   column-gap: 11px;
   row-gap: 80px;
 }
+.services__btn {
+  width: 100%;
+  background-color: #AD1818;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.services__btn:hover {
+  color: #AD1818;
+  background-color: #fff;
+  border-color: #AD1818;
+}
 .services .service {
   position: relative;
   flex: 1 0 49%;
@@ -320,6 +331,8 @@ div {
 .services .service__img {
   height: 389px;
   margin-bottom: 25px;
+  object-fit: cover;
+  object-position: 50%;
 }
 .services .service__title {
   color: #fff;
@@ -339,16 +352,6 @@ div {
 }
 .services .add-prop-service .service__img {
   margin-bottom: 25px;
-}
-.services__container .services__button {
-  color: #fff;
-  background-color: #AD1818;
-  border: 1px solid transparent;
-}
-.services__container .services__button:hover {
-  color: #AD1818;
-  background-color: #fff;
-  border-color: #AD1818;
 }
 
 .popup {
@@ -570,6 +573,11 @@ div {
     padding: 0 16px;
   }
 }
+@media (max-width: 1080px) {
+  .contacts__mail, .contacts__tel {
+    font-size: 45px;
+  }
+}
 @media (max-width: 960px) {
   .page > *:not(:last-child) {
     padding-bottom: 120px;
@@ -718,11 +726,9 @@ div {
     margin-bottom: 73px;
   }
   .contacts__tel {
-    font-size: 45px;
     margin-right: 118px;
   }
   .contacts__mail {
-    font-size: 45px;
     margin-bottom: 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   }
