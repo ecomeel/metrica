@@ -11,7 +11,6 @@ burgerBtnNode.addEventListener('click', toggleBurger);
 
 //Закрытие бургера при нажатии на стр
 const brg = Array.from(document.querySelectorAll('.burger__menu-link'));
-console.log(brg);
 brg.forEach(el => {
     el.addEventListener('click', toggleBurger);
 });
