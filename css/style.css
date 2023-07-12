@@ -426,6 +426,22 @@ div {
   border-color: #AD1818;
 }
 
+.calculator {
+  padding-top: 150px;
+}
+.calculator__content-wrapper {
+  display: flex;
+}
+.calculator__title {
+  margin-bottom: 61px;
+  display: block;
+  font-size: 45px;
+  line-height: 45px;
+  flex-grow: 100%;
+}
+.total {
+  width: 280px;
+}
 .reviews__title {
   margin-bottom: 32px;
 }

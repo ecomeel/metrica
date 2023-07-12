@@ -1,0 +1,95 @@
+.calculator {
+    padding-top: 150px;
+    &__content-wrapper {
+        display: flex;
+    }
+    &__title {
+        margin-bottom: 61px;
+        display: block;
+        font-size: 45px;
+        line-height: 45px;
+        flex-grow: 100%;
+    }
+    &__subtitle {
+    }
+    &__description {
+    }
+
+}
+.design {
+    .flat {
+        &__type {
+        }
+        &__type-title {
+        }
+        &__type-list {
+        }
+        &__type-item {
+        }
+        &__size {
+            .slider-wrapper {
+            }
+        }
+        &__size-title {
+        }
+        &__size-value {
+        }
+        &__size-range {
+        }
+    }
+}
+
+.total {
+    width: 280px;
+    &__title {
+    }
+    &__result-price {
+    }
+    &__metr-price {
+    }
+    &__deadline {
+    }
+    &__order-project-btn {
+    }
+}
+
+.composition {
+    &__label {
+    }
+    .planning-solution {
+    }
+    .draw-options {
+    }
+    .visual-options {
+    }
+}
+
+.what-needs-add {
+    &__option {
+    }
+}
+
+.additional-services {
+    .addit-service {
+        &__button {
+        }
+        &__img {
+        }
+        &__title {
+        }
+        &__price {
+        }
+    }
+}
+
+.quantity-selector {
+    &__subtract {
+    }
+    &__quantity {
+    }
+    &__add {
+    }
+}
+
+
+
