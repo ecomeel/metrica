@@ -1,5 +1,8 @@
 class View {
-    constructor({changeFlatType}) {
+    constructor({
+        changeFlatType,
+        changeFlatSize
+    }) {
         this.flatSizeSliderNode = document.getElementById('flatSizeSlider');
         this.typeFlatSelectorNode = document.getElementById('typeFlatSelector');
         this.totalPriceNode = document.getElementById('totalPrice');
@@ -8,22 +11,23 @@ class View {
         this.flatSizeValueNode = document.getElementById('flatSizeValue');
 
         this.typeFlatSelectorNode.addEventListener('change', this._handlerChangeFlatType);
+        this.flatSizeSliderNode.addEventListener('change', this._handlerChangeFlatSize)
 
         this.changeFlatType = changeFlatType;
+        this.changeFlatSize = changeFlatSize;
+
 
 
     }
 
     render(total, metrPrice) {
-        this.totalPriceNode.innerText = total;
-        this.metrPriceNode.innerText = metrPrice;
+        this.totalPriceNode.innerText = total + '₽';
+        this.metrPriceNode.innerText = metrPrice + ' ₽/м2';
     }
 
     renderFlatSize(value) {
         this.flatSizeValueNode.innerText = value;
     }
-
-    
 
     getFlatSize() {
         return this.flatSizeSliderNode.value;
@@ -38,7 +42,10 @@ class View {
     }
 
     _handlerChangeFlatType = () => {
-        // this.changeFlatType(this.getFlatType(this.typeFlatSelectorNode))
         this.changeFlatType(this.getFlatType());
+    }
+    _handlerChangeFlatSize = () => {
+        this.renderFlatSize(this.getFlatSize());
+        this.changeFlatSize(this.getFlatSize());
     }
 }
