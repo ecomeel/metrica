@@ -65,15 +65,16 @@
     .composition {
         &__label {
         }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            & > * {
+                display: flex;
+            }
+        }
         & > * {
             font-size: 30px;
             row-gap: 40px;
-        }
-        & > *:not(:first-child) {
-            display: flex;
-        }
-        & > *:not(:last-child, :first-child) {
-            margin-bottom: 40px;
         }
         .planning-solution {
             column-gap: 241px;

@@ -488,15 +488,16 @@ div {
 .design .flat__size .slider__range {
   width: 257px;
 }
+.design .composition__list {
+  display: flex;
+  flex-direction: column;
+}
+.design .composition__list > * {
+  display: flex;
+}
 .design .composition > * {
   font-size: 30px;
   row-gap: 40px;
-}
-.design .composition > *:not(:first-child) {
-  display: flex;
-}
-.design .composition > *:not(:last-child, :first-child) {
-  margin-bottom: 40px;
 }
 .design .composition .planning-solution {
   column-gap: 241px;
