@@ -294,21 +294,26 @@
                     <div class="design">
                       <div class="flat">
                         <div class="flat__type">
-                          <label class="flat__type-title" for="typeFlat">выберите тип помещения</label>
+                          <label class="flat__type-title subtitle" for="typeFlat">выберите тип помещения</label>
                           <select id="typeFlat" class="flat__type-list">
                             <option class="flat__type-item" value="flat">квартира</option>
-                            <option class="flat__type-item" value="house">дом</option>
+                            <option class="flat__type-item subtitle" value="house">дом</option>
                           </select>
                         </div>
                         <div class="flat__size">
-                          <p class="flat__size-title" for="flatSize">укажите метраж помещения</p>
-                          <div class="slider-wrapper">
-                            <label class="flat__size-value" for="slider">0</label>
+                          <p class="flat__size-title subtitle" for="flatSize">укажите метраж помещения</p>
+                          <div class="slider">
+                            <div class="slider__value">
+                                <output class="slider__amount subtitle"
+                                    for="flatSizeSlider">100</output>
+                                <p class="subtitle">м²</p>
+                            </div>
                             <input type="range"
-                              id="flatSize"
-                              class="flat__size-range"
-                              min="30"
-                              max="100"
+                              id="flatSizeSlider"
+                              class="slider__range"
+                              min="0"
+                              max="300"
+                              value="100"
                             >
                           </div>
                         </div>
@@ -316,7 +321,7 @@
                       <div class="composition">
                         <h3 class="calculator__subtitle">Состав дизайн-проекта</h3>
                         <div class="planning-solution">
-                            <label for="" class="composition__label">планировочное решение</label>
+                            <label for="" class="composition__label subtitle">планировочное решение</label>
                             <div class="quantity-selector">
                                 <button class="quantity-selector__subtract">-</button>
                                 <p class="quantity-selector__quantity">0</p>
@@ -324,7 +329,7 @@
                             </div>
                         </div>
                         <div class="draw-options">
-                            <label for="" class="composition__label">варианты чертежей</label>
+                            <label for="" class="composition__label subtitle">варианты чертежей</label>
                             <div class="quantity-selector">
                                 <button class="quantity-selector__subtract">-</button>
                                 <p class="quantity-selector__quantity">0</p>
@@ -332,7 +337,7 @@
                             </div>
                         </div>
                         <div class="visual-options">
-                            <label for="" class="composition__label">варианты визуализации</label>
+                            <label for="" class="composition__label subtitle">варианты визуализации</label>
                             <div class="quantity-selector">
                                 <button class="quantity-selector__subtract">-</button>
                                 <p class="quantity-selector__quantity">0</p>
@@ -342,64 +347,78 @@
                       </div>
                       <div class="what-needs-add">
                         <h3 class="calculator__subtitle">что понадобится в дизайн проекте</h3>
-                        <button class="what-needs-add__option">3D визуализация1</button>
-                        <button class="what-needs-add__option">чертежи (рабочая документация)</button>
-                        <button class="what-needs-add__option">планировочное решение</button>
-                        <button class="what-needs-add__option">ведомости (шопинг-лист)</button>
-                        <button class="what-needs-add__option">товары со скидкой</button>
-                        <button class="what-needs-add__option">смета на ремонт</button>
-                        <button class="what-needs-add__option">мебель на заказ</button>
+                        <button class="what-needs-add__option subtitle">3D визуализация</button>
+                        <button class="what-needs-add__option subtitle">чертежи (рабочая документация)</button>
+                        <button class="what-needs-add__option subtitle">планировочное решение</button>
+                        <button class="what-needs-add__option subtitle">ведомости (шопинг-лист)</button>
+                        <button class="what-needs-add__option subtitle">товары со скидкой</button>
+                        <button class="what-needs-add__option subtitle">смета на ремонт</button>
+                        <button class="what-needs-add__option subtitle">мебель на заказ</button>
                       </div>
                       <div class="additional-services">
                         <h3 class="calculator__subtitle">дополнительные услуги</h3>
                         <p class="calculator__description">оплачиваются отдельно и не входят в состав проекта</p>
                         <div class="addit-service">
-                            <button class="addit-service__button">
-                                <img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img">
-                            </button>
-                            <p class="addit-service__title">умный дом</p>
-                            <p class="addit-service__price">30 000 ₽</p>
+                            <div class="additional-wrapper">
+                                <button class="addit-service__button">
+                                    <img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img">
+                                </button>
+                                <p class="addit-service__title subtitle">умный дом</p>
+                            </div>
+                            <p class="addit-service__price subtitle">30 000 ₽</p>
                         </div>
                         <div class="addit-service">
-                            <button class="addit-service__button">
-                                <img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img">
-                            </button>
-                            <p class="addit-service__title">технический надзор</p>
-                            <p class="addit-service__price">20 000 ₽</p>
+                            <div class="additional-wrapper">
+                                <button class="addit-service__button">
+                                    <img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img">
+                                </button>
+                                <p class="addit-service__title subtitle">технический надзор</p>
+                            </div>
+                            <p class="addit-service__price subtitle">20 000 ₽</p>
                         </div>
                         <div class="addit-service">
-                            <button class="addit-service__button"><img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img"></button>
-                            <p class="addit-service__title">авторский надзор</p>
-                            <p class="addit-service__price">25 000 ₽</p>
+                            <div class="additional-wrapper">
+                                <button class="addit-service__button"><img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img"></button>
+                                <p class="addit-service__title subtitle">авторский надзор</p>
+                            </div>
+                            <p class="addit-service__price subtitle">25 000 ₽</p>
                         </div>
                         <div class="addit-service">
-                            <button class="addit-service__button"><img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img"></button>
-                            <p class="addit-service__title">3D тур по визуализациям проекта</p>
-                            <p class="addit-service__price">4 000 ₽</p>
+                            <div class="additional-wrapper">
+                                <button class="addit-service__button"><img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img"></button>
+                                <p class="addit-service__title subtitle">3D тур по визуализациям проекта</p>
+                            </div>
+                            <p class="addit-service__price subtitle">4 000 ₽</p>
                         </div>
                         <div class="addit-service">
-                            <button class="addit-service__button"><img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img"></button>
-                            <p class="addit-service__title">дизайн-проект дополнительного помещения</p>
-                            <p class="addit-service__price">20 000 ₽</p>
+                            <div class="additional-wrapper">
+                                <button class="addit-service__button"><img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img"></button>
+                                <p class="addit-service__title subtitle">дизайн-проект дополнительного помещения</p>
+                            </div>
+                            <p class="addit-service__price subtitle">20 000 ₽</p>
                         </div>
                         <div class="addit-service">
-                            <button class="addit-service__button"><img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img"></button>
-                            <p class="addit-service__title">дизайн-проект лоджии</p>
-                            <p class="addit-service__price">10 000 ₽</p>
+                            <div class="additional-wrapper">
+                                <button class="addit-service__button"><img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img"></button>
+                                <p class="addit-service__title subtitle">дизайн-проект лоджии</p>
+                            </div>
+                            <p class="addit-service__price subtitle">10 000 ₽</p>
                         </div>
                         <div class="addit-service">
-                            <button class="addit-service__button"><img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img"></button>
-                            <p class="addit-service__title">дизайн-проект гардеробной комнаты</p>
-                            <p class="addit-service__price">10 000 ₽</p>
+                            <div class="additional-wrapper">
+                                <button class="addit-service__button"><img src="img/calculator/checkbox-unselect.png" alt="" class="addit-service__img"></button>
+                                <p class="addit-service__title subtitle">дизайн-проект гардеробной комнаты</p>
+                            </div>
+                            <p class="addit-service__price subtitle">10 000 ₽</p>
                         </div>
                       </div>
                     </div>
                     <div class="total">
                         <h3 class="total__title">стоимость проекта</h3>
                         <p class="total__result-price">0 р</p>
-                        <p class="total__metr-price">0 р/м</p>
+                        <p class="total__metr-price subtitle">0 р/м</p>
                         <p class="total__deadline">35-45 дней</p>
-                        <button class="total__order-project-btn"></button>
+                        <button class="total__order-project-btn">Заказать проект</button>
                     </div>
                 </div>
               </div>
