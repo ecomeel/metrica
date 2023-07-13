@@ -108,6 +108,11 @@ input, button, textarea {
   transition: all 0.5s;
 }
 
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
 html,
 body {
   height: 100%;
@@ -424,6 +429,212 @@ div {
   background-color: #fff;
   color: #AD1818;
   border-color: #AD1818;
+}
+
+.calculator {
+  padding-top: 150px;
+  padding-bottom: 0px;
+}
+.calculator__content-wrapper {
+  display: flex;
+  column-gap: 10px;
+}
+.calculator__title {
+  margin-bottom: 61px;
+  display: block;
+  font-size: 45px;
+  line-height: 45px;
+  flex-grow: 100%;
+}
+.calculator__subtitle {
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.design > * {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+}
+.design > * > *:first-child {
+  padding-top: 20px;
+}
+.design > *:not(:last-child) {
+  padding-bottom: 60px;
+}
+.design .flat__type {
+  margin-bottom: 62px;
+}
+.design .flat__type-list {
+  margin-left: 236px;
+  width: 160px;
+  letter-spacing: -0.09px;
+  font-weight: 400;
+  font-style: inherit;
+  font-size: 30px;
+  line-height: 41px;
+}
+.design .flat__size {
+  display: flex;
+}
+.design .flat__size .slider {
+  width: 257px;
+  margin-left: 200px;
+}
+.design .flat__size .slider__value {
+  display: flex;
+  justify-content: space-between;
+  color: #AD1818;
+}
+.design .flat__size .slider__range {
+  width: 257px;
+  appearance: none;
+  writing-mode: horizontal-tb !important;
+}
+.design .flat__size .slider__range::-webkit-slider-runnable-track {
+  border-radius: 10px/100%;
+  height: 1px;
+  background-color: #AD1818;
+}
+.design .flat__size .slider__range::-webkit-slider-thumb {
+  background: #AD1818;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 15px;
+  height: 16px;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+.design .composition__list {
+  display: flex;
+  flex-direction: column;
+}
+.design .composition__list > * {
+  display: flex;
+}
+.design .composition > * {
+  font-size: 30px;
+  row-gap: 40px;
+}
+.design .composition .planning-solution {
+  column-gap: 241px;
+}
+.design .composition .draw-options {
+  column-gap: 315px;
+}
+.design .composition .visual-options {
+  column-gap: 258px;
+}
+.design .what-needs-add__list > * {
+  margin-bottom: 20px;
+}
+.design .what-needs-add__option {
+  padding: 20px;
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: transparent;
+  text-align: left;
+}
+.design .additional-services .calculator__subtitle {
+  margin-bottom: 20px;
+}
+.design .additional-services .calculator__description {
+  margin-bottom: 61px;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.06em;
+}
+.design .additional-services .addit-service {
+  display: flex;
+  justify-content: space-between;
+}
+.design .additional-services .addit-service .additional-wrapper {
+  display: flex;
+}
+.design .additional-services .addit-service__button {
+  background-color: transparent;
+}
+.design .additional-services .addit-service__img {
+  width: 19px;
+  height: 19px;
+}
+.design .additional-services .addit-service__img_added {
+  background-color: #AD1818;
+  background-image: url("../../img/calculator/checkbox-selected.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 5px;
+}
+.design .additional-services .addit-service__title {
+  margin-left: 20px;
+}
+.design .additional-services .addit-service__price {
+  color: #AD1818;
+}
+.design .additional-services .addit-service:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.total {
+  position: sticky;
+  top: 10px;
+  padding: 20px;
+  width: 280px;
+  height: 410px;
+  border-radius: 5px;
+  background-color: #F6F6F6;
+}
+.total__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+}
+.total__result-price {
+  margin-bottom: 5px;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+}
+.total__metr-price {
+  margin-bottom: 105px;
+}
+.total__deadline {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.total__order-project-btn {
+  padding: 20px 40px;
+  width: 100%;
+  background-color: #AD1818;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.quantity-selector {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  color: #AD1818;
+}
+.quantity-selector__subtract, .quantity-selector__add {
+  color: #AD1818;
+  background-color: transparent;
+}
+
+.what-needs-add_red {
+  border: 1px solid #AD1818 !important;
+  color: #AD1818;
+  position: relative;
+}
+
+.what-needs__img {
+  width: 22px;
+  position: absolute;
+  right: 20px;
+  top: 28px;
 }
 
 .reviews__title {

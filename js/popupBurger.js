@@ -36,7 +36,6 @@ burgerNode.addEventListener('click', (event) => {
 
 //Закрытие бургера при нажатии на link
 const brg = Array.from(document.querySelectorAll('.burger__menu-link'));
-console.log(brg);
 brg.forEach(el => {
     el.addEventListener('click', toggleBurger);
 });
