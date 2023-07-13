@@ -539,6 +539,17 @@ div {
 .design .additional-services .addit-service__button {
   background-color: transparent;
 }
+.design .additional-services .addit-service__img {
+  width: 19px;
+  height: 19px;
+}
+.design .additional-services .addit-service__img_added {
+  background-color: #AD1818;
+  background-image: url("../../img/calculator/checkbox-selected.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 5px;
+}
 .design .additional-services .addit-service__title {
   margin-left: 20px;
 }
@@ -550,6 +561,8 @@ div {
 }
 
 .total {
+  position: sticky;
+  top: 10px;
   padding: 20px;
   width: 280px;
   height: 410px;
@@ -604,7 +617,7 @@ div {
   width: 22px;
   position: absolute;
   right: 20px;
-  top: 25px;
+  top: 28px;
 }
 
 .reviews__title {

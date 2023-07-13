@@ -1,11 +1,12 @@
 class Controller {
     constructor() {
         this.view = new View({
-            changeFlatType: this.handleViewChangeType,
-            changeFlatSize: this.handlerViewChangeSize,
+            changeFlatType: this._handleViewChangeType,
+            changeFlatSize: this._handlerViewChangeSize,
+            addAdditService: this._handlerViewAddAdditService
         });
         this.model = new Model({
-            changeModelPrice: this.handleModelChangePrice,
+            changeModelPrice: this._handleModelChangePrice,
         });
     }
 
@@ -17,15 +18,20 @@ class Controller {
         this.view.render(this.model.totalPrice, this.model.metrPrice);
     }
 
-    handleViewChangeType = (flatType) => {
+    _handleViewChangeType = (flatType) => {
         this.model.changeFlatType(flatType);
     };
 
-    handlerViewChangeSize = (flatSize) => {
+    _handlerViewChangeSize = (flatSize) => {
         this.model.changeFlatSize(flatSize)
     };
 
-    handleModelChangePrice = (total, metrPrice) => {
+    _handleModelChangePrice = (total, metrPrice) => {
         this.view.render(total, metrPrice);
     };
+
+    _handlerViewAddAdditService = (additPrice) => {
+        this.model.totalPrice += additPrice;
+        this.view.render(this.model.totalPrice, this.model.metrPrice)
+    }
 }

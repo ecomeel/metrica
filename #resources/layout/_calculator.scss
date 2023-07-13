@@ -122,7 +122,15 @@
                 background-color: transparent;
             }
             &__img {
-
+                width: 19px;
+                height: 19px;
+                &_added {
+                    background-color: $red-color;
+                    background-image: url('../../img/calculator/checkbox-selected.png');
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    border-radius: 5px;
+                }
             }
             &__title {
                 margin-left: 20px;
@@ -140,6 +148,8 @@
 }
 
 .total {
+    position: sticky;
+    top: 10px;
     padding: 20px;
     width: 280px;
     height: 410px;
@@ -197,7 +207,9 @@
     width: 22px;
     position: absolute;
     right: 20px;
-    top: 25px;
+    top: 28px;
 }
+
+
 
 

@@ -20,7 +20,7 @@ class Model {
 
     changeFlatSize(flatSize) {
         this.flatSize = flatSize;
-        this.calculateTotalPrice();
+        this._calculateTotalPrice();
         this.changeModelPrice(this.totalPrice, this.metrPrice)
     }
 
@@ -30,10 +30,10 @@ class Model {
         } else if (this.flatType === "house") {
             this.metrPrice = 2000;
         }
-        this.calculateTotalPrice();
+        this._calculateTotalPrice();
     }
 
-    calculateTotalPrice() {
+    _calculateTotalPrice() {
         this.totalPrice = this.flatSize * this.metrPrice;
 
         this.changeModelPrice(this.totalPrice, this.metrPrice);
