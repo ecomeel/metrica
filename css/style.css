@@ -484,9 +484,26 @@ div {
 .design .flat__size .slider__value {
   display: flex;
   justify-content: space-between;
+  color: #AD1818;
 }
 .design .flat__size .slider__range {
   width: 257px;
+  appearance: none;
+  writing-mode: horizontal-tb !important;
+}
+.design .flat__size .slider__range::-webkit-slider-runnable-track {
+  border-radius: 10px/100%;
+  height: 1px;
+  background-color: #AD1818;
+}
+.design .flat__size .slider__range::-webkit-slider-thumb {
+  background: #AD1818;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 15px;
+  height: 16px;
+  -webkit-appearance: none;
+  margin-top: -7px;
 }
 .design .composition__list {
   display: flex;
