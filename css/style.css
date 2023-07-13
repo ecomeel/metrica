@@ -508,7 +508,7 @@ div {
 .design .composition .visual-options {
   column-gap: 258px;
 }
-.design .what-needs-add > *:not(:first-child, :last-child) {
+.design .what-needs-add__list > * {
   margin-bottom: 20px;
 }
 .design .what-needs-add__option {
@@ -592,6 +592,19 @@ div {
 .quantity-selector__subtract, .quantity-selector__add {
   color: #AD1818;
   background-color: transparent;
+}
+
+.what-needs-add_red {
+  border: 1px solid #AD1818 !important;
+  color: #AD1818;
+  position: relative;
+}
+
+.what-needs__img {
+  width: 22px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
 }
 
 .reviews__title {
