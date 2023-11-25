@@ -437,7 +437,7 @@ div {
 }
 .calculator__content-wrapper {
   display: flex;
-  column-gap: 10px;
+  justify-content: space-between;
 }
 .calculator__title {
   margin-bottom: 61px;
@@ -511,6 +511,7 @@ div {
 }
 .design .composition__list > * {
   display: flex;
+  justify-content: space-between;
 }
 .design .composition > * {
   font-size: 30px;
@@ -756,7 +757,7 @@ div {
 
 .footer__nav {
   padding-top: 57px;
-  max-width: 460px;
+  max-width: 500px;
   margin: 0 auto;
 }
 .footer__item_about {

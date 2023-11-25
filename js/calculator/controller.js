@@ -1,7 +1,7 @@
 class Controller {
     constructor() {
         this.view = new View({
-            changeFlatType: this._handleViewChangeType,
+            changeFlatType: this._handlerChangeFlatType,
             changeFlatSize: this._handlerViewChangeSize,
             addAdditService: this._handlerViewAddAdditService
         });
@@ -11,16 +11,18 @@ class Controller {
     }
 
     init() {
-        this.model.flatType = this.view.getFlatType();
-        this.model.flatSize = this.view.getFlatSize();
-        this.view.renderFlatSize(this.model.flatSize);
-        this.model.changeMetrPrice();
-        this.view.render(this.model.totalPrice, this.model.metrPrice);
+        this.view.renderFlatSize(this.model.getFlatSize());
+        this.view.renderPrice(this.model.getTotalPrice(), this.model.getMetrPrice());
     }
 
-    _handleViewChangeType = (flatType) => {
-        this.model.changeFlatType(flatType);
-    };
+    _handlerChangeFlatType = () => {
+        this.model.changeFlatType(this._getFlatType());
+        this.view.renderPrice(this.model.getTotalPrice(), this.model.getMetrPrice())
+    }
+
+    // _handleViewChangeType = (flatType) => {
+    //     this.model.changeFlatType(flatType);
+    // };
 
     _handlerViewChangeSize = (flatSize) => {
         this.model.changeFlatSize(flatSize)
@@ -33,5 +35,10 @@ class Controller {
     _handlerViewAddAdditService = (additPrice) => {
         this.model.totalPrice += additPrice;
         this.view.render(this.model.totalPrice, this.model.metrPrice)
+    }
+
+
+    _getFlatType() {
+        return document.getElementById('typeFlatSelector').value;
     }
 }

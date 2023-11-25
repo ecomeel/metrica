@@ -14,13 +14,14 @@ class View {
         this.whatNeedsAddNode = document.getElementById('whatNeedsAdd');
         this.additionalServicesNode = document.getElementById('additionalServices');
 
-        this.typeFlatSelectorNode.addEventListener('change', this._handlerChangeFlatType);
+        this.typeFlatSelectorNode.addEventListener('change', changeFlatType);
+
         this.flatSizeSliderNode.addEventListener('change', this._handlerChangeFlatSize);
         this.compositions.addEventListener('click', this._handlerCompositions);
         this.whatNeedsAddNode.addEventListener('click', this._handlerAddWhatNeeds);
         this.additionalServicesNode.addEventListener('click', this._handlerAddService)
 
-        this.changeFlatType = changeFlatType;
+        // this.changeFlatType = changeFlatType;
         this.changeFlatSize = changeFlatSize;
         this.addAdditService = addAdditService;
 
@@ -28,7 +29,7 @@ class View {
 
     }
 
-    render(total, metrPrice) {
+    renderPrice(total, metrPrice) {
         this.totalPriceNode.innerText = total + '₽';
         this.metrPriceNode.innerText = metrPrice + ' ₽/м2';
     }
@@ -41,16 +42,13 @@ class View {
         return this.flatSizeSliderNode.value;
     }
 
-    getFlatType() {
-        return this.typeFlatSelectorNode.value;
-    }
-
     getRoomAreaValue() {
         return this.flatSizeSliderNode.value;
     }
-
+//
     _handlerChangeFlatType = () => {
-        this.changeFlatType(this.getFlatType());
+        const typeFlatSelectorNode = document.getElementById('typeFlatSelector');
+        this.changeFlatType(typeFlatSelectorNode.value);
     }
 
     _handlerChangeFlatSize = () => {

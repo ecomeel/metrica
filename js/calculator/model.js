@@ -9,13 +9,27 @@ class Model {
     }
 
     getTotalPrice() {
-        return this.typeFlat;
+        return this.totalPrice;
+    }
+
+    getMetrPrice() {
+        return this.metrPrice;
+    }
+
+    getFlatSize() {
+        return this.flatSize;
     }
 
     changeFlatType(flatType) {
         this.flatType = flatType;
-        this.changeMetrPrice();
-        this.changeModelPrice(this.totalPrice, this.metrPrice);
+
+        if (flatType == "flat") {
+            this.metrPrice = 1000;
+        } else if (flatType == "house") {
+            this.metrPrice = 2000;
+        }
+
+        this._calculateTotalPrice();
     }
 
     changeFlatSize(flatSize) {
@@ -24,18 +38,8 @@ class Model {
         this.changeModelPrice(this.totalPrice, this.metrPrice)
     }
 
-    changeMetrPrice() {
-        if (this.typeFlat === "flat") {
-            this.metrPrice = 1000;
-        } else if (this.flatType === "house") {
-            this.metrPrice = 2000;
-        }
-        this._calculateTotalPrice();
-    }
 
     _calculateTotalPrice() {
         this.totalPrice = this.flatSize * this.metrPrice;
-
-        this.changeModelPrice(this.totalPrice, this.metrPrice);
     }
 }
