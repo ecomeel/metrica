@@ -39,17 +39,12 @@ class View {
     getRoomAreaValue() {
         return this.flatSizeSliderNode.value;
     }
-    //
+
     _handlerChangeFlatType = () => {
         const typeFlatSelectorNode =
             document.getElementById("typeFlatSelector");
         this.changeFlatType(typeFlatSelectorNode.value);
     };
-
-    // _handlerChangeFlatSize = () => {
-    //     this.renderFlatSize(this.getFlatSize());
-    //     this.changeFlatSize(this.getFlatSize());
-    // }
 
     _handlerCompositions = (event) => {
         const composition = event.target.closest("div");

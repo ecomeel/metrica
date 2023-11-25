@@ -2,7 +2,7 @@ class Controller {
     constructor() {
         this.view = new View({
             changeFlatType: this._handlerChangeFlatType,
-            changeFlatSize: this._handlerViewChangeSize,
+            changeFlatSize: this._handlerChangeFlatSize,
             addAdditService: this._handlerViewAddAdditService,
         });
         this.model = new Model();
@@ -24,7 +24,7 @@ class Controller {
         );
     };
 
-    _handlerViewChangeSize = () => {
+    _handlerChangeFlatSize = () => {
         document.getElementById("flatSizeValue").innerText =
             this._getFlatSize();
         this.model.changeFlatSize(this._getFlatSize());
