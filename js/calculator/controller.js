@@ -3,29 +3,33 @@ class Controller {
         this.view = new View({
             changeFlatType: this._handlerChangeFlatType,
             changeFlatSize: this._handlerViewChangeSize,
-            addAdditService: this._handlerViewAddAdditService
+            addAdditService: this._handlerViewAddAdditService,
         });
-        this.model = new Model({
-            changeModelPrice: this._handleModelChangePrice,
-        });
+        this.model = new Model();
     }
 
     init() {
         this.view.renderFlatSize(this.model.getFlatSize());
-        this.view.renderPrice(this.model.getTotalPrice(), this.model.getMetrPrice());
+        this.view.renderPrice(
+            this.model.getTotalPrice(),
+            this.model.getMetrPrice()
+        );
     }
 
     _handlerChangeFlatType = () => {
         this.model.changeFlatType(this._getFlatType());
+        this.view.renderPrice(
+            this.model.getTotalPrice(),
+            this.model.getMetrPrice()
+        );
+    };
+
+    _handlerViewChangeSize = () => {
+        document.getElementById("flatSizeValue").innerText =
+            this._getFlatSize();
+        this.model.changeFlatSize(this._getFlatSize());
+        console.log(this.model.getTotalPrice())
         this.view.renderPrice(this.model.getTotalPrice(), this.model.getMetrPrice())
-    }
-
-    // _handleViewChangeType = (flatType) => {
-    //     this.model.changeFlatType(flatType);
-    // };
-
-    _handlerViewChangeSize = (flatSize) => {
-        this.model.changeFlatSize(flatSize)
     };
 
     _handleModelChangePrice = (total, metrPrice) => {
@@ -34,11 +38,14 @@ class Controller {
 
     _handlerViewAddAdditService = (additPrice) => {
         this.model.totalPrice += additPrice;
-        this.view.render(this.model.totalPrice, this.model.metrPrice)
-    }
-
+        this.view.render(this.model.getTotalPrice(), this.model.getMetrPrice());
+    };
 
     _getFlatType() {
-        return document.getElementById('typeFlatSelector').value;
+        return document.getElementById("typeFlatSelector").value;
+    }
+
+    _getFlatSize() {
+        return document.getElementById("flatSizeSlider").value;
     }
 }

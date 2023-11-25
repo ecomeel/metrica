@@ -1,11 +1,9 @@
 class Model {
-    constructor({ changeModelPrice }) {
+    constructor() {
         this.totalPrice = 30000;
         this.flatType = "flat";
         this.metrPrice = 1000;
         this.flatSize = 30;
-
-        this.changeModelPrice = changeModelPrice;
     }
 
     getTotalPrice() {
@@ -35,9 +33,7 @@ class Model {
     changeFlatSize(flatSize) {
         this.flatSize = flatSize;
         this._calculateTotalPrice();
-        this.changeModelPrice(this.totalPrice, this.metrPrice)
     }
-
 
     _calculateTotalPrice() {
         this.totalPrice = this.flatSize * this.metrPrice;
