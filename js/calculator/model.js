@@ -1,6 +1,6 @@
 class Model {
     constructor() {
-        this.totalPrice = 30000;
+        this.totalPrice= 30000;
         this.flatType = "flat";
         this.metrPrice = 1000;
         this.flatSize = 30;

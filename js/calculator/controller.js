@@ -23,6 +23,7 @@ class Controller {
             this.model.getMetrPrice()
         );
     };
+    
 
     _handlerChangeFlatSize = () => {
         document.getElementById("flatSizeValue").innerText =
