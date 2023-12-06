@@ -33,13 +33,9 @@ class Controller {
         this.view.renderPrice(this.model.getTotalPrice(), this.model.getMetrPrice())
     };
 
-    _handleModelChangePrice = (total, metrPrice) => {
-        this.view.render(total, metrPrice);
-    };
-
     _handlerViewAddAdditService = (additPrice) => {
-        this.model.totalPrice += additPrice;
-        this.view.render(this.model.getTotalPrice(), this.model.getMetrPrice());
+        this.model.increaseTotalPrice(additPrice);
+        this.view.renderPrice(this.model.getTotalPrice(), this.model.getMetrPrice());
     };
 
     _getFlatType() {

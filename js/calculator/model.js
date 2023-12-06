@@ -10,6 +10,10 @@ class Model {
         return this.totalPrice;
     }
 
+    increaseTotalPrice(addPrice) {
+        this.totalPrice += addPrice;
+    }
+
     getMetrPrice() {
         return this.metrPrice;
     }
