@@ -67,7 +67,7 @@ class View {
         const whatNeedsAddBtnNode = event.target;
         whatNeedsAddBtnNode.classList.toggle("what-needs-add_red");
         const addedImg =
-            '<img class="what-needs__img" src="../../img/calculator/what-need-selected.png">';
+            '<img class="what-needs__img" src="./img/calculator/what-need-selected.png">';
         whatNeedsAddBtnNode.innerHTML += addedImg;
     };
 
