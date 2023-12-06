@@ -65,6 +65,7 @@ class View {
 
     _handlerAddWhatNeeds = (event) => {
         const whatNeedsAddBtnNode = event.target;
+        if (!whatNeedsAddBtnNode.classList.contains('what-needs-add__option')) return 
         whatNeedsAddBtnNode.classList.toggle("what-needs-add_red");
         const addedImg =
             '<img class="what-needs__img" src="./img/calculator/what-need-selected.png">';
