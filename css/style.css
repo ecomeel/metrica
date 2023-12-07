@@ -564,7 +564,7 @@ div {
 }
 .design .additional-services .addit-service__img_added {
   background-color: #AD1818;
-  background-image: url("../../img/calculator/checkbox-selected.png");
+  background-image: url("../img/calculator/checkbox-selected.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-radius: 5px;
