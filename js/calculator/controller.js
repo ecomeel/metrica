@@ -24,7 +24,6 @@ class Controller {
         );
     };
     
-
     _handlerChangeFlatSize = () => {
         document.getElementById("flatSizeValue").innerText =
             this._getFlatSize();
