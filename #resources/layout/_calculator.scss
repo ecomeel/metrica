@@ -3,8 +3,9 @@
     padding-bottom: 0px;
     &__content-wrapper {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row-reverse;
         justify-content: space-between;
+        column-gap: 20px;
     }
     &__title {
         margin-bottom: 61px;
@@ -34,9 +35,11 @@
     .flat {
         &__type {
             margin-bottom: 62px;
+            display: flex;
+            justify-content: space-between;
         }
         &__type-list {
-            margin-left: 236px;
+            // margin-left: 236px;
             width: 160px;
             letter-spacing: -0.09px;
             font-weight: 400;
@@ -47,9 +50,10 @@
         }
         &__size {
             display: flex;
+            justify-content: space-between;
             .slider {
                 width: 257px;
-                margin-left: 200px;
+                // margin-left: 200px;
                 &__value {
                     display: flex;
                     justify-content: space-between;
@@ -91,15 +95,15 @@
             font-size: 30px;
             row-gap: 40px;
         }
-        .planning-solution {
-            column-gap: 241px;
-        }
-        .draw-options {
-            column-gap: 315px;
-        }
-        .visual-options {
-            column-gap: 258px;
-        }
+        // .planning-solution {
+        //     // column-gap: 241px;
+        // }
+        // .draw-options {
+        //     // column-gap: 315px;
+        // }
+        // .visual-options {
+        //     // column-gap: 258px;
+        // }
     }
     
     .what-needs-add {

@@ -437,8 +437,9 @@ div {
 }
 .calculator__content-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row-reverse;
   justify-content: space-between;
+  column-gap: 20px;
 }
 .calculator__title {
   margin-bottom: 61px;
@@ -465,9 +466,10 @@ div {
 }
 .design .flat__type {
   margin-bottom: 62px;
+  display: flex;
+  justify-content: space-between;
 }
 .design .flat__type-list {
-  margin-left: 236px;
   width: 160px;
   letter-spacing: -0.09px;
   font-weight: 400;
@@ -477,10 +479,10 @@ div {
 }
 .design .flat__size {
   display: flex;
+  justify-content: space-between;
 }
 .design .flat__size .slider {
   width: 257px;
-  margin-left: 200px;
 }
 .design .flat__size .slider__value {
   display: flex;
@@ -517,15 +519,6 @@ div {
 .design .composition > * {
   font-size: 30px;
   row-gap: 40px;
-}
-.design .composition .planning-solution {
-  column-gap: 241px;
-}
-.design .composition .draw-options {
-  column-gap: 315px;
-}
-.design .composition .visual-options {
-  column-gap: 258px;
 }
 .design .what-needs-add__list > * {
   margin-bottom: 20px;
@@ -965,6 +958,24 @@ div {
   .contacts__tel::before, .contacts__mail::before {
     top: -35px;
   }
+  .calculator__content-wrapper {
+    flex-direction: column;
+  }
+  .calculator .total {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .calculator .total > * {
+    flex: 1 1 47%;
+  }
+  .calculator .total__order-project-btn {
+    padding: 5px 10px;
+    width: 50%;
+    height: 50px;
+  }
 }
 @media (max-width: 576px) {
   ._container {
@@ -1107,6 +1118,20 @@ div {
   .services .popup__input:last-of-type {
     margin-bottom: 60px;
   }
+  .calculator .flat__type-list {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .calculator .slider {
+    width: 150px !important;
+  }
+  .calculator .slider__range {
+    width: 150px !important;
+  }
+  .calculator .quantity-selector__value {
+    font-size: 20px;
+    line-height: 22px;
+  }
   .reviews {
     padding-top: 76px;
   }
@@ -1226,5 +1251,16 @@ div {
   .review__text {
     max-width: 350px;
     margin-left: 3px;
+  }
+  .calculator__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .calculator .total {
+    gap: 5px;
+  }
+  .calculator .total__result-price {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

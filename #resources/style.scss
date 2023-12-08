@@ -294,6 +294,27 @@ div {
             }
         }
     }
+    .calculator {
+        &__content-wrapper {
+            flex-direction: column;
+        }
+        .total {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            & > * {
+                flex: 1 1 47%;
+            }
+
+            &__order-project-btn {
+                padding: 5px 10px;
+                width: 50%;
+                height: 50px;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -476,6 +497,24 @@ div {
         }
     }
 
+    .calculator {
+        .flat__type-list {
+            font-size: 18px;
+            line-height: 21px;
+        }
+        .slider {
+            width: 150px !important;
+
+            &__range {
+                width: 150px !important;
+            }
+        }
+        .quantity-selector__value {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+
     .reviews {
         padding-top: 76px;
         &__list {
@@ -622,6 +661,19 @@ div {
         &__text {
             max-width: 350px;
             margin-left: 3px;
+        }
+    }
+    .calculator {
+        &__title {
+            margin-bottom: 30px;
+            font-size: 30px;
+            line-height: 30px;
+        }
+        .total {
+            gap: 5px;
+            &__result-price {
+                font-size: 30px;
+            }
         }
     }
 }
